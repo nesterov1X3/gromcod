@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" integrity="sha256-WAgYcAck1C1/zEl5sBl5cfyhxtLgKGdpI3oKyJffVRI=" crossorigin="anonymous" />
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+       
+
+        }
+        .header{
+            
+            
+        }
+
+        .nav-list{
+            width: 100%;
+            background-color: darkturquoise;
+            height: 40px;
+            position: fixed;
+            top: 0px;
+            left: 0px;
+        }
+        
+        .nav-item{
+          
+          margin-left: 16px;
+          color: white;
+          display: inline-block;
+        }
+            
+        main{
+            /* height: 5000px; */
+            
+           
+        }
+        .content{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+             margin-right: -50%;
+             transform: translate(-50%, -50%);
+            
+        }
+        .head{
+            height: 200px;
+            width: 200px;
+            background-color: aquamarine;
+        }
+        .ear{
+            position: relative;
+            background-color: brown;
+            width: 40px;
+            height: 60px;
+            bottom: 60px;
+        }
+        
+
+         .ear_right{
+             left: 40px;
+             float: right;
+             
+         }
+         .ear_left{
+             right: 40px;
+             float: left;
+
+         }
+         .eye{
+             position: absolute;
+             background-color: grey;
+             width: 30px;
+             height: 30px;
+             border-radius: 50%;
+             top: 80px;
+
+         }
+         .eye_right{
+             float: right;
+             right:  40px;
+         }
+         .eye_left{
+             float: left;
+             left:  40px;
+         }
+
+
+
+
+    </style>
+
+</head>
+
+<body>
+    <header class="header">
+        <nav class="nvigation">
+            <ul class="nav-list">
+                <li class="nav-item">Home</li>
+                <li class="nav-item">Products</li>
+                <li class="nav-item">Contacts</li>
+            </ul>
+        </nav>
+    </header>
+    <main class="content">
+        <div class="head">
+            <div class="ear ear_right"></div>
+            <div class="ear ear_left"></div>
+            <div class="eye eye_right"></div>
+            <div class="eye eye_left"></div>
+        </div>
+    </main>
+</body>
+
+</html>
