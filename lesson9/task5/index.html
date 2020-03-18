@@ -6,12 +6,12 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" integrity="sha256-WAgYcAck1C1/zEl5sBl5cfyhxtLgKGdpI3oKyJffVRI=" crossorigin="anonymous" />
     <style>
-        *{
+        /* *{
             
             box-sizing: border-box;
         }
-        .nvigation{
-            
+        .header{
+          
         }
         .nav-list{
             
@@ -23,11 +23,11 @@
             height: 40px;
             position: fixed;
             top: 0px;
-            /* left: 0px; */
+            left: 0px; 
         }
-        
+         
         .nav-item{
-          
+          float: left;
           margin-left: 16px;
           color: white;
           display: inline-block;
@@ -39,11 +39,11 @@
         }
         .head{
             z-index: 1;
-             position: absolute;
+            position: absolute;
             top: 50%;
             left: 50%;
-             margin-right: -50%;
-             transform: translate(-50%, -50%);
+            margin-right: -50%;
+            transform: translate(-50%, -50%);
             height: 200px;
             width: 200px;
             background-color: aquamarine;
@@ -83,11 +83,72 @@
          .eye_left{
              float: left;
              left:  40px;
-         }
-
-
-
-
+         } */
+         * {
+  box-sizing: border-box;
+}
+.header {
+  background-color: darkturquoise;
+  height: 40px;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+.nav-list {
+  height: 40px;
+  margin: 0;
+}
+.nav-item {
+  float: left;
+  margin-left: 16px;
+  color: white;
+  line-height: 40px;
+  list-style-type: none;
+}
+.content {
+  height: 5000px;
+  background-color: beige;
+}
+.head {
+  width: 200px;
+  height: 200px;
+  background-color: aquamarine;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+.ear {
+  width: 40px;
+  height: 60px;
+  background-color: brown;
+  position: absolute;
+}
+.ear_left {
+  margin-left: -40px;
+  margin-top: -60px;
+}
+.ear_right {
+  margin-left: 200px;
+  margin-top: -60px;
+}
+.eye {
+  height: 30px;
+  width: 30px;
+  background-color: gray;
+  border-radius: 50%;
+  position: absolute;
+}
+.eye_left {
+  margin-top: 80px;
+  margin-left: 40px;
+}
+.eye_right {
+  margin-top: 80px;
+  margin-left: 130px;
+}
     </style>
 
 </head>
