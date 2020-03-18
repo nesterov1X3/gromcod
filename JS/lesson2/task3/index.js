@@ -7,7 +7,7 @@ console.log(anotherNumber);
 
 const costumer = {
     name: "John",
-    age: 17,
+    age: 17
 };
 const anotherCostumer = costumer;
 anotherCostumer.age = 20;
