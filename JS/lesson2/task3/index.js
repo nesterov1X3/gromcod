@@ -10,7 +10,7 @@ const custumer = {
     age: 17
 };
 const anotherCustumer = costumer;
-anotherCostumer.age = 20;
+anotherCustumer.age = 20;
 
 console.log(custumer.age);
 console.log(anotherCustumer.age);
