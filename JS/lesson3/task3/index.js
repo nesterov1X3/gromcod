@@ -39,7 +39,7 @@ console.log("true === true: ", true === true);
 
 console.log("null === undefined: ", null === undefined);
 false === 0;
-console.log("a <= false === 0: ",false === 0);
+console.log(" false === 0: ",false === 0);
 
 
 
