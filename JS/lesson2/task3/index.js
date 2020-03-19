@@ -5,12 +5,12 @@ anotherNumber = 77;
 console.log(goodNumber);
 console.log(anotherNumber);
 
-const custumer = {
+const customer = {
     name: "John",
     age: 17
 };
-const anotherCustumer = costumer;
-anotherCustumer.age = 20;
+const anotherCustomer = customer;
+anotherCustomer.age = 20;
 
-console.log(custumer.age);
-console.log(anotherCustumer.age);
+console.log(customer.age);
+console.log(anotherCustomer.age);
