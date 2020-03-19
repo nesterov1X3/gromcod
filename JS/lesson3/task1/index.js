@@ -1,6 +1,6 @@
 
-console.log("+ 17: ", 17);
-console.log("+ '77': ", '77');
+console.log("+17: ", +17);
+console.log("+'77': ", +'77');
 
 
 console.log("10 + '5': ", 10 + '5');
