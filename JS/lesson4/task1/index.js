@@ -1,3 +1,7 @@
-for(sum=1; sum < 150; sum++){
-    console.log("Result: " + sum)
+
+let n = 150;
+let sum = 0;
+while(sum < n){
+   sum++
+console.log("Result: " + sum)
 }
