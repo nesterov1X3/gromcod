@@ -1,6 +1,7 @@
-const n = 13;
 
-for(sum = 1; sum <= n; sum++){
-    
-    console.log( String(sum)) 
+const n = 12;
+let sum = "";
+for (let i = 1; i <= n; i++) {
+  sum = sum + i;
 }
+console.log(sum);
