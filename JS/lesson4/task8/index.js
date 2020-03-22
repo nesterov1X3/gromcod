@@ -8,7 +8,7 @@ for(let min = 0; min <= max; min++){
 }
 int = result / 1234
 float = result % 1234
-
+console.log(int > float)
 
 switch(int > float){
     case 1:
