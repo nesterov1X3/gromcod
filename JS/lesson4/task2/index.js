@@ -1,5 +1,5 @@
-const m = 2;
-const n = 14;
+const m = 5;
+const n = 17;
 let result = 0;
 for (let i = m; i <= n; i++) {
   if (i % 2 === 0 && i % 4 != 0) {
