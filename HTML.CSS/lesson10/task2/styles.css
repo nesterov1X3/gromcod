@@ -42,7 +42,7 @@
     
 }
 .news{
-    line-height: 40px;
+    
     display: flex;
     flex-direction: column;
     width: 200px;
@@ -56,4 +56,8 @@
 .text{
    
     list-style-type: none;
+}
+.type{
+    line-height: 40px;
+
 }
