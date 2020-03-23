@@ -54,10 +54,10 @@
     justify-content: center;
 }
 .text{
-    
+    line-height: 40px;
     list-style-type: none;
 }
 .type{
+
     
-    line-height: 40px;
 }
