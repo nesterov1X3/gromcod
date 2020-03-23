@@ -1,8 +1,8 @@
 let result = 0;
 function getSum(a, b){
-    for( a ; a <= b; a++){
-       if(a % 2 === 0){
-        result += a;
+    for( let i = a ; i <= b; i++){
+       if(i % 2 === 0){
+        result += i;
        }
     }
     return result;
