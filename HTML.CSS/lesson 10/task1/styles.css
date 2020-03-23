@@ -1,16 +1,4 @@
-html {
-    font-size: 24px; 
-}
 
-div {
-    margin: 16px;
-    border: 1px solid burlywood;
-}
-
-.horizontal > span {
-    
-    background-color: aqua;
-}
 .horizontal{
     height: 50px;
     display: flex;
@@ -25,7 +13,3 @@ div {
     display: flex;
     align-items: center;
 } 
-.vertical > span {
-    
-    background-color: coral;
-}
