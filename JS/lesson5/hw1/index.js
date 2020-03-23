@@ -6,6 +6,6 @@ function getSum(a, b){
         result += a;
        }
     }
-    return result
+    
 }
 
