@@ -43,7 +43,7 @@
     flex-direction: column;
     width: 200px;
     background-color: grey;
-    height: 40px;
+    
     
 }
 .test{
@@ -54,10 +54,10 @@
     
     list-style-type: none;
 }
-/* .type{
-    
+.type{
+    height: 40px;
    
-} */
+}
 .footer{
     display: flex;
     height: 40px;
