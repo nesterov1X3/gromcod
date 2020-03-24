@@ -1,4 +1,6 @@
-
+*{
+    box-sizing: border-box
+}
 
 header{
     display: flex;
@@ -6,7 +8,8 @@ header{
    
 }
 .article {
-    flex: 300px 1 0;
+    width: 300px;
+    /* flex: 300px 1 0; */
     padding: 16px;
     margin: 8px;
     background-color: bisque;
