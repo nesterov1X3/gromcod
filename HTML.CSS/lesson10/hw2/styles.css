@@ -1,17 +1,23 @@
+*{
+    box-sizing: border-box;
+}
+
 header{
     display: flex;
     justify-content: center;
    
 }
-.article{
-    margin: 8px;
+.article {
+    flex: 300px 1 0;
     padding: 16px;
+    margin: 8px;
     background-color: bisque;
 }
+
 .articles-list{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    min-width: 300px;
+    
 
 }
