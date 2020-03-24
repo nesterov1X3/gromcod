@@ -14,10 +14,7 @@ header{
     background-color: bisque;
 }
 
-.articles-list{
+.articles-list {
     display: flex;
-    flex-direction: column;
     flex-wrap: wrap;
-    
-
 }
