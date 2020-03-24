@@ -1,6 +1,11 @@
 *{
     box-sizing: border-box;
 }
+.page{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
 .header{
     height: 40px;
     background-color: yellow;
@@ -8,27 +13,18 @@
     align-items: center;
 }
 
-.footer{
-    display: flex;
-    height: 40px;
-    background-color: green;
-}
 .navigation{
     margin: 0;
     display: flex;
     list-style-type: none;
 }
-.navigetion_item{
+.navigation_item{
     margin-right: 16px;
 }
 .footer_text{
     margin: auto;
 }
-.page{
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
+
 .content{
     flex-grow: 1;
     display: flex;
@@ -49,7 +45,7 @@
     background-color: grey;
     
 }
-.divv{
+.test{
     display: flex;
     justify-content: center;
 }
@@ -60,4 +56,9 @@
 .type{
     line-height: 40px;
    
+}
+.footer{
+    display: flex;
+    height: 40px;
+    background-color: green;
 }
