@@ -1,7 +1,7 @@
 * {
     box-sizing: border-box;
   }
-  .text {
+  .tooltip-text {
     position: relative;
     margin: 16px;
     border-bottom: 1px dotted black;
