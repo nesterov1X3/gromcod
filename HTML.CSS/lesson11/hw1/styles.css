@@ -8,16 +8,16 @@
     display: inline-flex;
   }
   
-  .tooltip {
+  .tooltip{
     position: absolute;
     background-color: grey;
     border-radius: 4px;
     padding: 8px;
     bottom: -40px;
     color: white;
-    
+    display: none;
   }
   
-  .tooltip-text:hover  .tooltip{
+  .tooltip-text:hover .tooltip {
     display: block;
   }
