@@ -1,7 +1,7 @@
 * {
     box-sizing: border-box;
   }
-  .tooltip-text {
+  .tooltip-text{
     position: relative;
     margin: 16px;
     border-bottom: 1px dotted black;
@@ -15,9 +15,9 @@
     padding: 8px;
     bottom: -40px;
     color: white;
-    /* display: none; */
+    
   }
   
-  .tooltip-text:hover .tooltip {
+  .tooltip:hover  {
     display: block;
   }
