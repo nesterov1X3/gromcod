@@ -15,7 +15,7 @@
     padding: 8px;
     bottom: -40px;
     color: white;
-    display: none;
+    /* display: none; */
   }
   
   .tooltip-text:hover .tooltip {
