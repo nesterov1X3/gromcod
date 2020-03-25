@@ -1,6 +1,4 @@
-*{
-    box-sizing: border-box;
-}
+
 html{
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
@@ -13,7 +11,10 @@ section{
 h1{
     word-spacing: 20px;
     text-transform: uppercase;
-    text-align: center;
+    /* text-align: center; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 p{
    line-height: 28px;
