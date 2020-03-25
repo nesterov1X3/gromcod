@@ -1,23 +1,20 @@
 * {
     box-sizing: border-box;
   }
-
   .text {
-    display: inline-flex;
     position: relative;
     margin: 16px;
     border-bottom: 1px dotted black;
-    
+    display: inline-flex;
   }
   
   .tooltip {
+    position: absolute;
     background-color: gray;
+    border-radius: 4px;
     padding: 8px;
     bottom: -40px;
     color: white;
-    position: absolute;
-    
-    border-radius: 4px;
     display: none;
   }
   
