@@ -35,6 +35,11 @@
 
 }
 .dropdown:hover .menu-list{
-background-color: ghostwhite;
-display: block;
+    
+    display: block;
+}
+
+
+.menu-item:hover{
+    background-color: ghostwhite;
 }
