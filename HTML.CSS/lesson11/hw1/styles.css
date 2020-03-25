@@ -1,23 +1,19 @@
-* {
-    box-sizing: border-box;
-  }
-  .tooltip-text{
-    position: relative;
-    margin: 16px;
-    border-bottom: 1px dotted black;
-    display: inline-flex;
-  }
-  
-  .tooltip{
-    position: absolute;
-    background-color: grey;
-    border-radius: 4px;
-    padding: 8px;
-    bottom: -40px;
-    color: white;
-    display: none;
-  }
-  
-  .tooltip-text:hover .tooltip {
-    display: block;
-  }
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+  margin: 16px;
+}
+.tooltip .tooltip-text {
+  display: none;
+  background-color: grey;
+  color: #fff;
+  padding: 8px;
+  border-radius: 4px;
+  position: absolute;
+  z-index: 1;
+  bottom: -40px;
+}
+.tooltip:hover .tooltip-text {
+display: block;
+}
