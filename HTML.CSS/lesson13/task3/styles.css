@@ -1,0 +1,12 @@
+h1{
+    margin: 0px;
+    padding: 16px;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: Arial;
+    font-size: 96px;
+    font-weight: 700;
+    background-image: repeating-linear-gradient(45deg, yellow red);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
