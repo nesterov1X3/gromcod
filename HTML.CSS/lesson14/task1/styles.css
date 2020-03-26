@@ -6,7 +6,7 @@ html{
     padding: 8px;
 }
 .properties-list{
-    line-height: 32px;
+    height: 32px;
     color: #f39;
     font-size: 24px;
     list-style-type: none;
