@@ -1,15 +1,16 @@
 .image-container{
     position: relative;
     text-align: center ;
+    
 }
 
 
 .image-button{
     min-width: 200px;
     max-width: 200px;
-    position: absolute;
     width: 200px;
     height: 50px;
+    position: absolute;
     background-color: bisque;
     font-size: 12px;
     font-weight: 700;
@@ -22,6 +23,10 @@
     top: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%);
+}
+.image{
+    height: auto;
+    
 }
 
 
