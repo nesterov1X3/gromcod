@@ -1,3 +1,6 @@
+*{
+    box-sizing: border-box;
+}
 .image-container{
     position: relative;
     text-align: center ;
