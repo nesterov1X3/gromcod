@@ -4,7 +4,6 @@
     
 }
 
-
 .image-button{
     width: 200px;
     height: 50px;
@@ -18,6 +17,10 @@
     line-height: 50px;
     top: calc(50% - 25px);
     left: calc(50% - 100px);
+}
+.image {
+    max-width: 100%;
+    height: auto;
 }
 
 .image-button:hover{
