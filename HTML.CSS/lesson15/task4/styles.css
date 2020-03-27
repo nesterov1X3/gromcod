@@ -1,30 +1,29 @@
-.image-container{
-    position: relative;
-    text-align: center ;
-    
-}
-
-.image-button{
-    width: 200px;
-    height: 50px;
-    position: absolute;
-    background-color: bisque;
-    font-size: 12px;
-    font-weight: 700;
-    text-transform: uppercase;
-    opacity: .5;
-    cursor: pointer;
-    line-height: 50px;
-    top: calc(50% - 25px);
-    left: calc(50% - 100px);
-}
 .image {
     max-width: 100%;
     height: auto;
 }
-
-.image-button:hover{
+.image-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.image-button {
+    width: 200px;
+    height: 50px;
+    background-color: bisque;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 700;
+    position: absolute;
+    top: calc(50% - 25px);
+    left: calc(50% - 100px);
+    opacity: 0.5;
+    cursor: pointer;
+}
+.image-button:hover {
     opacity: 1;
 }
-
 
