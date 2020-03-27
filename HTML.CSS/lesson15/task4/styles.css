@@ -1,0 +1,35 @@
+.image-container{
+    position: relative;
+    text-align: center ;
+}
+
+
+.image-button{
+    min-width: 200px;
+    position: absolute;
+    width: 200px;
+    height: 50px;
+    background-color: bisque;
+    font-size: 12px;
+    text-transform: uppercase;
+    opacity: .5;
+    cursor: pointer;
+    line-height: 50px;
+    text-align: center;
+    left: 50%;
+    top: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+.image-button:hover{
+    opacity: 1;
+}
+
+
+/* .i{
+    line-height: 50px;
+    
+} */
