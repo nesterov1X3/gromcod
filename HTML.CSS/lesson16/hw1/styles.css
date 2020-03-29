@@ -40,6 +40,9 @@ form{
     padding: 4px;
     outline: none;
 }
+.form-control{
+    width: 100%;
+}
 .form-label{
     margin-bottom: 4px;
 }
