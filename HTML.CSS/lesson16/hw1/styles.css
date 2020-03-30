@@ -1,22 +1,20 @@
 *{
     box-sizing: border-box;
 }
-
 body{
     background-color: bisque;
 
 }
 .page{
-   
-    
-    
-}
-form{
-    position: relative;
+    height: 100vh;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
+    
+}
+.login-form{
+    display: flex;
+    flex-direction: column;
     background-color: aqua;
     font-size: 16px;
     font-family: monospace;
@@ -66,8 +64,9 @@ form{
     margin-top: 4px;
 }
 .login-form{
-    position: absolute;
+    
+    /* position: absolute;
     top: 50%;
     left: 50%;
-    transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%); */
 }
