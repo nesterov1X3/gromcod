@@ -1,0 +1,79 @@
+*{
+    box-sizing: border-box;
+}
+   table{
+       border: 1px solid black;
+       margin: 16px;
+   }
+
+ td{
+     text-align: center;
+    border-collapse: collapse;
+    height: 50px;
+    width: 50px;
+
+}
+table, td{
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+
+ .fack_chess:nth-child(even){
+    background-color: white;
+}
+ .fack_chess:nth-child(odd){
+    background-color: black;
+} 
+
+.fack_chess1:nth-child(odd){
+    background-color: white;
+}
+ .fack_chess1:nth-child(even){
+    background-color: black;
+} 
+
+
+.fack_chess2:nth-child(even){
+    background-color: white;
+}
+ .fack_chess2:nth-child(odd){
+    background-color: black;
+} 
+
+.fack_chess3:nth-child(odd){
+    background-color: white;
+}
+ .fack_chess3:nth-child(even){
+    background-color: black;
+} 
+
+.fack_chess4:nth-child(even){
+    background-color: white;
+}
+ .fack_chess4:nth-child(odd){
+    background-color: black;
+} 
+
+.fack_chess5:nth-child(odd){
+    background-color: white;
+}
+ .fack_chess5:nth-child(even){
+    background-color: black;
+} 
+
+.fack_chess6:nth-child(even){
+    background-color: white;
+}
+ .fack_chess6:nth-child(odd){
+    background-color: black;
+} 
+.fack_chess7:nth-child(odd){
+    background-color: white;
+}
+ .fack_chess7:nth-child(even){
+    background-color: black;
+} 
+.chess{
+    border: none;
+}
+
