@@ -27,7 +27,8 @@ form{
     box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
 }
 
-.form-title{
+.form-title{ 
+    width: 100%;
     text-transform: uppercase;
     text-align: center;
 }
