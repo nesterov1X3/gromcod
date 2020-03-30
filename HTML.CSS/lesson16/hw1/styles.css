@@ -7,13 +7,11 @@ body{
 
 }
 .page{
-    left: calc(50% - 150px);
-    top: calc(50% - 172.44px);
-    position: absolute;
+   
+    
     
 }
 form{
-    
     position: relative;
     display: flex;
     flex-direction: column;
@@ -41,6 +39,7 @@ form{
     outline: none;
 }
 .form-control{
+    
     width: 100%;
     margin-bottom: 8px;
 }
@@ -65,4 +64,10 @@ form{
 #email{
     border: 3px solid #ff0000;
     margin-top: 4px;
+}
+.login-form{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
 }
