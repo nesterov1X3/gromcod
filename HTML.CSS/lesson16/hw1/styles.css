@@ -43,6 +43,7 @@ form{
 }
 .form-control{
     width: 100%;
+    margin-bottom: 8px;
 }
 .submit-button{
     width: 100%;
