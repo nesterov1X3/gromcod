@@ -22,8 +22,7 @@
     border-radius: 2px;
     animation: blinking 2s;
     animation-iteration-count: infinite;
-}
-.rect{
     animation: moving 2s;
-    animation-iteration-count: infinite; 
+    animation-iteration-count: infinite;
 }
+
