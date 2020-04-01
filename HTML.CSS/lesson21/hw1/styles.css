@@ -18,8 +18,10 @@ html{
     
 }
 h1{
-    margin: auto;
+    
     color: white;
+    padding: .5em;
+    margin: auto;
 }
 main{
     flex-grow: 1;
@@ -55,6 +57,7 @@ main{
     text-decoration: none;
     color: white;
     margin-left: 0.5em;
+    font-size: 16px;
    
 }
 }
