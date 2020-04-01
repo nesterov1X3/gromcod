@@ -2,7 +2,6 @@
     box-sizing: border-box;
 }
 html{
-    
     font-size: 16px;
     font-family: Verdana;
     color: #555;
@@ -18,7 +17,6 @@ html{
     
 }
 h1{
-    
     color: white;
     padding: .5em;
     margin: auto;
@@ -36,9 +34,9 @@ main{
 .nav-list{
     padding: 0px;
     list-style-type: none;
-    background-color: #808080;
+    
     color: white;
-    height: 2em;
+    
 }
 .nav-list-item{
     line-height: 2em;
@@ -51,17 +49,17 @@ main{
     
 }
 .nav-list-link{
-    /* overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap; */
+    background-color: #808080;
     text-decoration: none;
     color: white;
-    margin-left: 0.5em;
+    /* margin-left: 0.5em; */
     font-size: 16px;
-   
+    height: 2em;
+    padding: 0.5em;
 }
-}
+
 .section{
+    font-size: 1.25em;
     padding: .5em;
     width: 60%;
 }
@@ -75,9 +73,9 @@ main{
 .css-units{
     color: #808080;
     background-color: #e5e5e5;
-    font-size: 1.125;
+    font-size: 1.125em;
     font-weight: 700;
-
+     
 }
 .news{
     padding: .5em;
