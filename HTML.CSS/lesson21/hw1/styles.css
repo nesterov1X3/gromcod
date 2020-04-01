@@ -1,0 +1,88 @@
+*{
+    box-sizing: border-box;
+}
+html{
+    
+    font-size: 16px;
+    font-family: Verdana;
+    color: #555;
+}
+.page{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.header{
+    display: flex;
+    background-image: linear-gradient(60deg, red, orange);
+    
+}
+h1{
+    margin: auto;
+    color: white;
+}
+main{
+    flex-grow: 1;
+    display: flex;
+    font-size: 1.25em;
+    
+}
+.navigation{
+    padding: .5em;
+    width: 20%;
+}
+.nav-list{
+    padding: 0px;
+    list-style-type: none;
+    background-color: #808080;
+    color: white;
+    height: 2em;
+}
+.nav-list-item{
+    line-height: 2em;
+    height: 2em;
+    background-color: #808080;
+    margin-bottom: 0.5em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    
+}
+.nav-list-link{
+    /* overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap; */
+    text-decoration: none;
+    color: white;
+    margin-left: 0.5em;
+   
+}
+}
+.section{
+    padding: .5em;
+    width: 60%;
+}
+.section_header{
+    text-align: center;
+    font-size: 5vw;
+}
+.inits-list{
+    line-height: 1.75em;
+}
+.css-units{
+    color: #808080;
+    background-color: #e5e5e5;
+    font-size: 1.125;
+    font-weight: 700;
+
+}
+.news{
+    padding: .5em;
+    width: 20%;
+}
+
+.footer{
+    text-align: center;
+    padding: .5em;
+    background-color: #e5e5e5;
+}
