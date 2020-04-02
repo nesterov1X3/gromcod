@@ -57,18 +57,16 @@ main{
     font-size: 1.25em;
     padding: .5em;
     width: 60vw;
+    line-height: 1.75em;
 }
 .section__header{
     text-align: center;
     font-size: 5vw;
 }
 .units-list{
-    line-height: 1.75em;
+    
 }
 
-.li-units{
-    /* font-size: 1.25em; */
-}
 .css-units{
     
     color: #8b0000;
