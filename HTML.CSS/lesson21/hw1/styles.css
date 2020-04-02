@@ -55,7 +55,7 @@ main{
 }
 
 .section{
-    font-size: 1.25em;
+    
     padding: .5em;
     width: 60vw;
 }
@@ -64,10 +64,10 @@ main{
     font-size: 5vw;
 }
 .units-list{
-    
+    line-height: 1.75em;
 }
 .css-units{
-    line-height: 1.75em;
+    font-size: 1.25em;
     color: #8b0000;
     background-color: #e5e5e5;
     font-size: 1.125em;
