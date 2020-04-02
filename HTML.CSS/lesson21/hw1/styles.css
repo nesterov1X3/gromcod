@@ -41,6 +41,7 @@ main{
     background-color: #808080;
     margin-bottom: 0.5em;
     
+    
 }
 .nav-list-link{
     width: 100%;
@@ -58,7 +59,7 @@ main{
     padding: .5em;
     width: 60vw;
 }
-.section_header{
+.section__header{
     text-align: center;
     font-size: 5vw;
 }
