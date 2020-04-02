@@ -12,14 +12,14 @@ html{
     min-height: 100vh;
 }
 .header{
-    display: flex;
+   
     background-image: linear-gradient(60deg, red, orange);
     
 }
 h1{
     color: white;
-    padding: .5em;
-    margin: auto;
+    /* padding: .5em; */
+    text-align: center;
 }
 main{
     flex-grow: 1;
@@ -49,13 +49,14 @@ main{
     
 }
 .nav-list-link{
-    background-color: #808080;
+    width: 100%;
+    display: inline-block;
+    padding: 0 0.5em;
     text-decoration: none;
     color: white;
-    /* margin-left: 0.5em; */
-    font-size: 16px;
-    height: 2em;
-    padding-left: 0.5em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 .section{
