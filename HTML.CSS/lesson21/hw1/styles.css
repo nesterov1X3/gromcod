@@ -43,9 +43,9 @@ main{
     height: 2em;
     background-color: #808080;
     margin-bottom: 0.5em;
-    overflow: hidden;
+    /* overflow: hidden;
     text-overflow: ellipsis;
-    white-space: nowrap;
+    white-space: nowrap; */
     
 }
 .nav-list-link{
