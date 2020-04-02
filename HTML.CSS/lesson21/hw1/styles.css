@@ -34,18 +34,12 @@ main{
 .nav-list{
     padding: 0px;
     list-style-type: none;
-    
-    color: white;
-    
 }
 .nav-list-item{
     line-height: 2em;
     height: 2em;
     background-color: #808080;
     margin-bottom: 0.5em;
-    /* overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap; */
     
 }
 .nav-list-link{
@@ -72,7 +66,7 @@ main{
     line-height: 1.75em;
 }
 .css-units{
-    color: #808080;
+    color: #8b0000;
     background-color: #e5e5e5;
     font-size: 1.125em;
     font-weight: 700;
