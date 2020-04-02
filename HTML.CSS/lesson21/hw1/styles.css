@@ -64,8 +64,12 @@ main{
     font-size: 5vw;
 }
 .units-list{
-    font-size: 1.25em;
+    
     line-height: 1.75em;
+}
+
+.units-list > li{
+    font-size: 1.25em;
 }
 .css-units{
     
