@@ -24,7 +24,6 @@ h1{
 main{
     flex-grow: 1;
     display: flex;
-    font-size: 1.25em;
     
 }
 .navigation{
@@ -55,7 +54,7 @@ main{
 }
 
 .section{
-    
+    font-size: 1.25em;
     padding: .5em;
     width: 60vw;
 }
@@ -64,7 +63,6 @@ main{
     font-size: 5vw;
 }
 .units-list{
-    
     line-height: 1.75em;
 }
 
