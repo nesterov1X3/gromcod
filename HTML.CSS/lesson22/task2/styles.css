@@ -39,7 +39,7 @@ span{
       .products_list{
         width: calc(100vw/2);
     }
-    .navigation{
+      .navigation{
         width: calc(100vw/2);
     }
   }
