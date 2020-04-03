@@ -14,7 +14,7 @@ span{
   height: 200px;
   background-color: #ff7f50;
   flex-grow: 1;
-  width: calc(100vw/3);
+  
   
 }
 .products_list{
@@ -22,14 +22,14 @@ span{
     height: 200px;
     background-color: #006400;
     flex-grow: 1;
-    width: calc(100vw/3);
+    
   }
 .news{
     display: flex;
     height: 200px;
     background-color: #0ff;
     flex-grow: 1;
-    width: calc(100vw/3);
+    
   }
 
 
@@ -43,7 +43,14 @@ span{
   @media screen and (min-width: 900px){
     .content{
         display: flex;
-        
-        
+    }
+    .products_list{
+        width: calc(100vw/3);
+    }
+    .news{
+        width: calc(100vw/3);
+    }
+    .navigation{
+        width: calc(100vw/3);
     }
 }
