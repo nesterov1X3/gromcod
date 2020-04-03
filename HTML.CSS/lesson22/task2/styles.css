@@ -1,0 +1,40 @@
+span{
+    font-family: Verdana;
+    border-radius: 4px;
+    padding: 8px;
+    background-color: #faebd7;
+    margin: auto;
+}
+.navigation{
+    display: flex;
+  height: 200px;
+  background-color: #ff7f50;
+  flex-grow: 1;
+}
+.products_list{
+    display: flex;
+    height: 200px;
+    background-color: #006400;
+    flex-grow: 1;
+  }
+.news{
+    display: flex;
+    height: 200px;
+    background-color: #0ff;
+    flex-grow: 1;
+  }
+
+
+  @media screen and (min-width: 600px){
+      .products{
+          display: flex;
+          flex-grow: 2;
+      }
+  }
+
+  @media screen and (min-width: 900px){
+    .content{
+        display: flex;
+        
+    }
+}
