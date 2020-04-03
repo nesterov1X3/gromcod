@@ -1,6 +1,6 @@
-*{
+ *{
     box-sizing: border-box;
-}
+} 
 span{
     font-family: Verdana;
     border-radius: 4px;
@@ -14,18 +14,22 @@ span{
   height: 200px;
   background-color: #ff7f50;
   flex-grow: 1;
+  width: calc(100vw/3);
+  
 }
 .products_list{
     display: flex;
     height: 200px;
     background-color: #006400;
     flex-grow: 1;
+    width: calc(100vw/3);
   }
 .news{
     display: flex;
     height: 200px;
     background-color: #0ff;
     flex-grow: 1;
+    width: calc(100vw/3);
   }
 
 
@@ -36,9 +40,10 @@ span{
       }
   }
 
-  @media screen and (min-width: 899px){
+  @media screen and (min-width: 900px){
     .content{
         display: flex;
-        flex-grow: 3;
+        
+        
     }
 }
