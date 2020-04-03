@@ -36,6 +36,12 @@ span{
           display: flex;
           flex-grow: 2;
       }
+      .products_list{
+        width: calc(100vw/2);
+    }
+    .navigation{
+        width: calc(100vw/2);
+    }
   }
 
   @media screen and (min-width: 900px){
