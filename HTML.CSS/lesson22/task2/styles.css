@@ -1,12 +1,13 @@
-*{
+/* *{
     box-sizing: border-box;
-}
+} */
 span{
     font-family: Verdana;
     border-radius: 4px;
     padding: 8px;
     background-color: #faebd7;
     margin: auto;
+    text-transform: lowercase;
 }
 .navigation{
     display: flex;
