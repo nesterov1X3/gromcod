@@ -1,6 +1,6 @@
-/* *{
+*{
     box-sizing: border-box;
-} */
+}
 span{
     font-family: Verdana;
     border-radius: 4px;
@@ -39,6 +39,6 @@ span{
   @media screen and (min-width: 899px){
     .content{
         display: flex;
-        
+        flex-grow: 3;
     }
 }
