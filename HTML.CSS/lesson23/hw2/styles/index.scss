@@ -1,0 +1,62 @@
+@import 'layout.scss';
+
+span{
+    font-family: Verdana;
+    border-radius: 4px;
+    padding: 8px;
+    background-color: #faebd7;
+    margin: auto;
+    text-transform: lowercase;
+}
+.navigation{
+    display: flex;
+  height: 200px;
+  background-color: #ff7f50;
+  flex-grow: 1;
+  
+  
+}
+.products_list{
+    display: flex;
+    height: 200px;
+    background-color: #006400;
+    flex-grow: 1;
+    
+  }
+.news{
+    display: flex;
+    height: 200px;
+    background-color: #0ff;
+    flex-grow: 1;
+    
+  }
+  .item{
+
+      @include small{
+        .products{
+            display: flex;
+            flex-grow: 2;
+        }
+        .products_list{
+          width: calc(100vw/2);
+      }
+        .navigation{
+          width: calc(100vw/2);
+      }
+
+      }
+      @include medium{
+      .content{
+        display: flex;
+    }
+    .products_list{
+        width: calc(100vw/3);
+    }
+    .news{
+        width: calc(100vw/3);
+    }
+    .navigation{
+        width: calc(100vw/3);
+    }
+    }
+  }

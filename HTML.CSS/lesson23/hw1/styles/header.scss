@@ -10,7 +10,6 @@
         
     // }
     .menu{
-        
        display: flex;
        list-style-type: none;
        margin-left: 3em;
@@ -18,7 +17,7 @@
 
     }
     .menu__item{
-        height: 3em;
+        line-height: 3em;
         color: white;
         
     }
@@ -27,10 +26,11 @@
         // padding: 0;
         padding-right: 8px;
         padding-left: 8px;
-        height: 3em;
+        
         
     }
     .menu__item_active{
+        
         color: yellow ;
     }
     .submenu{
@@ -52,6 +52,7 @@
     }
     .menu__item:hover{
         background-color: #9acd32;
+        line-height: 3em;
     }
     .menu__item_active:hover .submenu{
         display: block;
