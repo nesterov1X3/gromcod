@@ -3,8 +3,7 @@ $md: 900px;
 
 
 @mixin small {
-    @media screen and (max-width: $sm - 
-    1) {
+    @media screen and (max-width: $sm - 1) {
         @content;
     }
 }

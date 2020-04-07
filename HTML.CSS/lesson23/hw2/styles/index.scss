@@ -45,8 +45,11 @@ span{
       }
 
       }
-      @include medium{
-      .content{
+
+
+      @include large {
+        
+     .content{
         display: flex;
     }
     .products_list{
