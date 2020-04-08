@@ -18,13 +18,7 @@
   padding: 0 8px;
   line-height: 3em;
   cursor: pointer;
-  margin-left: 16px;
 }
-.menu__item-text {
-  padding-right: 8px;
-  padding-left: 8px;
-}
-
 .menu__item_active {
   color: yellow;
 }
