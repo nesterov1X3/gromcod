@@ -29,28 +29,28 @@ span {
 }
 
 @media screen and (min-width: 600px) {
-  .item .products {
+  body .products {
     display: flex;
     flex-grow: 2;
   }
-  .item .products_list {
+  body .products_list {
     width: calc(100vw/2);
   }
-  .item .navigation {
+  body .navigation {
     width: calc(100vw/2);
   }
 }
 @media screen and (min-width: 900px) {
-  .item .content {
+  body .content {
     display: flex;
   }
-  .item .products_list {
+  body .products_list {
     width: calc(100vw/3);
   }
-  .item .news {
+  body .news {
     width: calc(100vw/3);
   }
-  .item .navigation {
+  body .navigation {
     width: calc(100vw/3);
   }
 }
