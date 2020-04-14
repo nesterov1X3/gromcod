@@ -6,5 +6,5 @@ function cloneArr(arr){
     }
     return rest;
 }
-const arrCopy = cloneArr(5);
+const arrCopy = cloneArr(numbers);
 console.log(arrCopy)
