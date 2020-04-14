@@ -1,6 +1,9 @@
 function increaseEvenEl(arr, delta){
     let sum = [];
     for(let i = 0; i <= arr.length; i++){
+        if(!Array.isArray(arr)){
+            return null;
+        }
         if(arr[i] % 2 == 0){
             sum[i] = arr[i] + delta;
         }
