@@ -1,5 +1,5 @@
 function createEmptyArray(len){
     const mass = [];
-    return len;
+    return mass;
 }
-console.log(createEmptyArray(3))
+// console.log(createEmptyArray(3))
