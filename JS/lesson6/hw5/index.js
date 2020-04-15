@@ -3,9 +3,9 @@ function reverseArray(arr){
     if(!Array.isArray(arr)){
         return null;
     }
-    const a = numbers;
-    const b = a.reverse()
-    return b;
+    for(let i = 0; i < arr.length; i++){
+        
+    }
         
 }
 const arrSwap = reverseArray(numbers)
