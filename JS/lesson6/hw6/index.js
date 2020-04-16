@@ -4,7 +4,7 @@ function cloneArr(arr){
         return null;
     }
     let clone = [];
-    clone = arr;
+    clone = numbers;
   
     // const [...rest] = numbers;
     return clone;
