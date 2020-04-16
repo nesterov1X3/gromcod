@@ -1,6 +1,7 @@
+const mass = new Array();
 function createEmptyArray(len){
-    const mass = new Array("len");
+    
     return mass;
 }
-const arr = createEmptyArray();
+const arr = createEmptyArray(mass);
 console.log(arr)
