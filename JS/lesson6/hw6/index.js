@@ -3,8 +3,11 @@ function cloneArr(arr){
     if(!Array.isArray(arr)){
         return null;
     }
-    const [...rest] = numbers;
-    return rest;
+    let clone = [];
+    clone = arr;
+  
+    // const [...rest] = numbers;
+    return clone;
 }
 const arrCopy = cloneArr(numbers);
 console.log(arrCopy)
