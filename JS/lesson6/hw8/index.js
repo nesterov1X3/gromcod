@@ -9,7 +9,11 @@ const a = [21, 13, 44, 70];
 // const arrSort = sortAsc(a);
 // console.log(arrSort)
 
-let sortAsc = (array) => {
+// let sortAsc = (array) => {
+    function sortAsc(array){
+    if(!Array.isArray(array)){
+        return null;
+    }
     let len = array.length;
     for (let i = 0; i < len; i++) {
         for (let j = 0; j < len; j++) {
