@@ -2,13 +2,14 @@ const numbers = [1, 4, 5, 4, 2, 1];
 
 function uniqueCount(array) {
     let result = [];
-
-  for (let str of array) {
-    if (!result.includes(str)) {
-      result +=(str);
+    let unical = 0; 
+  for (let item of array) {
+    if (!result.includes(item)) {
+      result.push(item);
     }
   }
-  return result;
+  unical = result.length;
+  return unical;
   }
   const result = uniqueCount(numbers);
   console.log(result);
