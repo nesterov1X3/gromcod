@@ -8,4 +8,4 @@ const squareArray = numbers => {
     return arrSquare
 }
 const arr = [2, 5, 6];
-console.log(squareArray(arr))
+console.log(squareArray(1))
