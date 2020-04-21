@@ -1,5 +1,6 @@
 const transaction = {
     currency: 'USD',
+    key: 'operation',
     value: 170,
     operation: 'sale',
     agent: {
@@ -15,8 +16,8 @@ const transaction = {
   /* выведите в консоль значение свойства 'value' с помощью квадратных скобок */
   console.log(transaction['value'])
   
-  const key = 'operation';
-  console.log([key]);
+//   const key = 'operation';
+  console.log(transaction[key]);
   
   /* выведите в консоль значение свойства, название которого находится в переменной key - используйте квадратные скобки */
   
