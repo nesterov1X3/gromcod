@@ -1,3 +1,7 @@
+// input -- obj
+//output -- nothing
+
+
 const getKeys = obj => {
     const keysToArr = Object.keys(obj)
     //  const result = [];
