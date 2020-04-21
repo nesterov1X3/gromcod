@@ -1,6 +1,6 @@
 const getKeys = obj => {
     const keysToArr = Object.keys(obj)
-     let result = []
+     let result = [];
      keysToArr.forEach(item => {
         result.push(obj[item])
     });
