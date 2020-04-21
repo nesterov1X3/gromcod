@@ -17,12 +17,13 @@ const user = {
   user['favorite music'] = 'rock';
   /* присвойте объекту свойство 'favorite music' со значением 'rock' */
   
-  user.address ;
+  user.address = {};
   /* присвойте объекту свойство 'address', которое будет пустым объкетом */
   
+  user.address.country = 'Ukraine';
   /* присвойте объекту в 'address' свойство 'country', со значением 'Ukraine' */
-//   user.address = 'country';
   
+  user.address.building = 17;
   /* присвойте объекту в 'address' свойство 'building', со значением 17 */
   
   /* выведите в консоль объект user */
