@@ -13,4 +13,4 @@ obj = {
     hant: true,
 };
 
-console.log(getKeys(obj));
+const result = getKeys(obj);
