@@ -9,8 +9,8 @@ const user = {
   /* присвойте объекту свойство hobby со значением 'football' с помощью точки */
     
   
-  let anotherKey = 'married';
-  anotherKey = false;
+  const anotherKey = 'married';
+  user.married = false;
 
   /* название свойства хранится в переменной anotherKey. Присвойте объекту такое свойство со значением false */
   
