@@ -5,12 +5,12 @@ const user = {
 
 
 
-  user.hobby = 'foorball';
+  user.hobby = 'football';
   /* присвойте объекту свойство hobby со значением 'football' с помощью точки */
     
   
-  const anotherKey = 'married';
-//   anotherKey = false;
+  let anotherKey = 'married';
+  anotherKey = false;
 
   /* название свойства хранится в переменной anotherKey. Присвойте объекту такое свойство со значением false */
   
