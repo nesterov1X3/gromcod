@@ -6,6 +6,7 @@ const transaction = {
       country: 'Ukraine',
       company: 'NYSE'
     },
+     key: 'operation',
     'operation time': 1584029990001
   };
   
@@ -15,8 +16,8 @@ const transaction = {
   /* выведите в консоль значение свойства 'value' с помощью квадратных скобок */
   console.log(transaction['value'])
   
-  const key = 'operation';
-  console.log(key)
+  
+  console.log(transaction['key'])
   /* выведите в консоль значение свойства, название которого находится в переменной key - используйте квадратные скобки */
   
   /* выведите в консоль значение свойства 'company' используя квадратные скобки */
