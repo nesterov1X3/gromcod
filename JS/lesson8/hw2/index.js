@@ -17,10 +17,11 @@ const user = {
   user['favorite music'] = 'rock';
   /* присвойте объекту свойство 'favorite music' со значением 'rock' */
   
-  user['address'] = '';
+  user.address ;
   /* присвойте объекту свойство 'address', которое будет пустым объкетом */
   
   /* присвойте объекту в 'address' свойство 'country', со значением 'Ukraine' */
+//   user.address = 'country';
   
   /* присвойте объекту в 'address' свойство 'building', со значением 17 */
   

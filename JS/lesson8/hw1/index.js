@@ -16,8 +16,7 @@ const transaction = {
   console.log(transaction['value'])
   
   const key = 'operation';
-  transaction.key = 'operation';
-  console.log(transaction['key'])
+  console.log(transaction['operation']);
   
   /* выведите в консоль значение свойства, название которого находится в переменной key - используйте квадратные скобки */
   
