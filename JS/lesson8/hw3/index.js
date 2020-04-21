@@ -17,4 +17,3 @@ obj = {
     hant: true,
 };
 
-// const result = getKeys(obj);
