@@ -1,10 +1,10 @@
 const getKeys = obj => {
     const keysToArr = Object.keys(obj)
-     const result = [];
+    //  const result = [];
      keysToArr.forEach(item => {
-        result.push(obj[item])
+        console.log(obj[item]);
     });
-    return result;
+    // return result;
 }
 obj = {
     name: 'Bob',
