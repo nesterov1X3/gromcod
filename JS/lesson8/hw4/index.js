@@ -1,7 +1,7 @@
 const user = {
     name: 'Sam'
 }
-userld = {
+const userld = {
    id: 4356234343,
 }
 //1
@@ -24,7 +24,7 @@ function addPropertyV3(userData, userld){
     Object.assign(obj, userData, userld)
     return obj;
 }
-addPropertyV3(user, userld)
+console.log(addPropertyV3(user, userld))
 
 //4
 function addPropertyV4(userData, userld){
