@@ -8,8 +8,8 @@ const obj2 = {
 };
 
 function compareObjects(obj1, obj2){
-    return obj1 === obj2
+    return obj1.keys === obj2.keys
 }
 
 const result = compareObjects(obj1, obj2)
-console.log(result)
+// console.log(result)
