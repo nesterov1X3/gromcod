@@ -27,8 +27,8 @@ addPropertyV3(transition, 'currency', 'grivasik')
 
 //4
 function addPropertyV4(obj, key, value){
-    let objNew = {};
-    Object.assign( objNew, obj, { key: value })
-    return objNew;
+    const result = {...obj, [key]: value};
+    
+    return result;
 }
 addPropertyV4(transition, 'currency', 'grivasik')

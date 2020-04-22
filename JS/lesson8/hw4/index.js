@@ -26,8 +26,10 @@ addPropertyV3(user, 9999234343)
 
 //4
 function addPropertyV4(userData, userId){
-    const {...rest} = userId;
-    userData.id = {...rest};
-    return userData;
+    const result = {...userData, id: userId};
+    
+    return result;
 }
-console.log(addPropertyV4(user, 545))
+console.log(addPropertyV4(user, 134332513))
+
+
