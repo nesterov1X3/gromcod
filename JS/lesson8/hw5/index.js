@@ -20,7 +20,7 @@ addPropertyV2(transition, 'currency', 'EURO')
 //3
 function addPropertyV3(obj, key, value){
     let objNew = {};
-    Object.assign( objNew, obj, { key: value })
+    Object.assign( objNew, obj, { [key]: value })
     return objNew;
 }
 addPropertyV3(transition, 'currency', 'grivasik')
