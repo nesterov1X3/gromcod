@@ -1,8 +1,7 @@
 const user = {
     name: 'Sam'
 }
-
-    
+ 
 //1
 function addPropertyV1(userData, userId){
     userData.id = userId;
@@ -27,11 +26,8 @@ addPropertyV3(user, 9999234343)
 
 //4
 function addPropertyV4(userData, userId){
-    let objSpred = {};
     const {...rest} = userId;
-    userData.id = userId;
-    
+    userData.id = {...rest};
     return userData;
 }
-
 console.log(addPropertyV4(user, 545))
