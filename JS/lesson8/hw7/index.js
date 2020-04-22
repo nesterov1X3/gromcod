@@ -8,7 +8,11 @@ const obj2 = {
 };
 
 function compareObjects(obj1, obj2){
-    return obj1.keys === obj2.keys
+    const res = false;
+    if(obj1.keys === obj2.keys){
+        bool = true;
+    }
+    return res;
 }
 
 const result = compareObjects(obj1, obj2)
