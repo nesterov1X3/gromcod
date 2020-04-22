@@ -6,7 +6,7 @@ const getKeys = obj => {
     const keysToArr = Object.keys(obj)
     //  const result = [];
      keysToArr.forEach(item => {
-        console.log([item]);
+        console.log(item);
     });
     // return result;
 }
