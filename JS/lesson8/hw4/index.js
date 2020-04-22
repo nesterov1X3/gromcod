@@ -20,11 +20,11 @@ function addPropertyV2(userData, userld){
 
 //3
 function addPropertyV3(userData, userld){
-    let
-    let obj = Object.assign(userData, userld)
+    let obj = {};
+    Object.assign(obj, userData, userld)
     return obj;
 }
-console.log(addPropertyV3(user, userld))
+addPropertyV3(user, userld)
 
 //4
 function addPropertyV4(userData, userld){
