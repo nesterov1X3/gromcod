@@ -11,10 +11,11 @@ addPropertyV1(transition, 'currency', 'USD')
 
 //2
 function addPropertyV2(obj, key, value){
-    Object.assign(obj, { key: value });
+    Object.assign(obj, { [key]: value });
     return obj;
 }
 addPropertyV2(transition, 'currency', 'EURO')
+// console.log(addPropertyV2(transition, 'currency', 'EURO'))
 
 //3
 function addPropertyV3(obj, key, value){
