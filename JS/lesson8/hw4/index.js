@@ -27,6 +27,11 @@ addPropertyV3(user, 9999234343)
 
 //4
 function addPropertyV4(userData, userId){
+    let objSpred = {};
+    const {...rest} = userId;
+    userData.id = userId;
     
     return userData;
 }
+
+console.log(addPropertyV4(user, 545))
