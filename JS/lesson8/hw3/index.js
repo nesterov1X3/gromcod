@@ -10,10 +10,10 @@ const getKeys = obj => {
     });
     // return result;
 }
-obj = {
-    name: 'Bob',
-    age: 17,
-    hair: "black",
-    hant: true,
-};
+// obj = {
+//     name: 'Bob',
+//     age: 17,
+//     hair: "black",
+//     hant: true,
+// };
 
