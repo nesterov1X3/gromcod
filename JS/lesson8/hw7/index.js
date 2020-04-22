@@ -4,16 +4,17 @@ const obj1 = {
 };
 const obj2 = {
     name: 'Tom', 
-    age: 174
+    age: 172
 };
 
 function compareObjects(obj1, obj2){
-    let bool = false;
-    if(obj1.keys == obj2.keys){
-        return true;
-    }
 
-    return false;
+    //  JSON.stringify(obj1) === JSON.stringify(obj2)
+
+    if(JSON.stringify(obj1) === JSON.stringify(obj2)){
+        return true;
+    }else
+        return false;
 }
 
 const result = compareObjects(obj1, obj2)
