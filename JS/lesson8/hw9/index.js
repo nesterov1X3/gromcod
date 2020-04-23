@@ -17,6 +17,7 @@ function pickProps(obj, arr){
       }
     }
  }
+ 
  return copy;
 }
 const result = pickProps(obj, arr)
