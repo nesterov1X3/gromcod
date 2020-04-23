@@ -5,20 +5,14 @@ const obj = {
 };
 const arr = ['a', 'c'];
 
-function pickProps(obj, arr){
-    let copy= {}
-    Object.assign(copy, obj)
-    
-  for (let key in copy){
-    for (let el of arr){
-      if(key !== el){
-         delete key
-         copy = obj;
+const pickProps = (obj, arr) => {
+    let result = {};
+    for (let i = 0; i < arr.length; i++) {
+      if (arr[i] in obj) {
+        result[arr[i]] = obj[arr[i]];
       }
     }
- }
- 
- return copy;
-}
+    return result;
+  };
 const result = pickProps(obj, arr)
 console.log(result)
