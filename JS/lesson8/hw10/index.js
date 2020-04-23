@@ -2,6 +2,7 @@ const obj = {
     'John Doe': 19,
     'Tom': 17, 
     'Bob': 18,
+    'Ol': 33,
 };
 
 function getAdults (obj){
@@ -13,7 +14,6 @@ function getAdults (obj){
          delete copy[key]
          getObjOld = copy;
       }
-  
  }
  return getObjOld;
 }

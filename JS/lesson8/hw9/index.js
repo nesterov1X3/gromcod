@@ -6,9 +6,18 @@ const obj = {
 const arr = ['a', 'c'];
 
 function pickProps(obj, arr){
-    let objSomeNum = {};
-    for(let i = 0; i = )
-    if(obj.key == arr){
-        objSomeNum.push()
+    let copy= {}
+    Object.assign(copy, obj)
+    
+  for (let key in copy){
+    for (let el of arr){
+      if(key !== el){
+         delete key
+         copy = obj;
+      }
     }
+ }
+ return copy;
 }
+const result = pickProps(obj, arr)
+console.log(result)
