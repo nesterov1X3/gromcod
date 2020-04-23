@@ -1,9 +1,22 @@
-obj = {
+const obj = {
     'John Doe': 19,
     'Tom': 17, 
     'Bob': 18,
 };
+
 function getAdults (obj){
+    let copy= {}
+    Object.assign(copy, obj)
  let getObjOld = {};
- if 
+  for (let key in copy){
+      if(copy[key] < 18){
+         delete copy[key]
+         getObjOld = copy;
+      }
+  
+ }
+ return getObjOld;
 }
+
+const result = getAdults(obj)
+console.log(result)
