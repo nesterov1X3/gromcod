@@ -8,6 +8,7 @@ function getSubArray(arr, n){
         }
     });
     return num;
+    
 }
 const subArray = getSubArray(numbers, 4)
 
