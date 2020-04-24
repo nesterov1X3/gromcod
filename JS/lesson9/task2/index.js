@@ -6,8 +6,8 @@ const user = {
     }
 }
 const copyObj = obj => {
-    const copyObj = {...obj}
-    return copyObj
+    const copy = {...obj}
+    return copy;
 }
 const result = copyObj(user);
 console.log(result)
