@@ -11,18 +11,29 @@ const customers = {
 }
 
 const getCustomersList = customersGet => {
-    const result = [];
-    for (let key in customersGet) {
-        result.push(customersGet[key]);
-    }
-    // const findLowerValue = Object.value(customersGet)
-    result.forEach((item, ) => {
-        if (item['age'] > item['age']) {
-            const firstObj = result.shift()
-            result.push(firstObj)
-        }
-    });
-    return result;
+    
+     const getList = Object.entries(customersGet)   
+     const getId1 = getList[0].shift()
+     const getId2 = getList[1].shift()
+     getList[0][0].id = getId1;
+     getList[1][0].id = getId2;
+
+     const objValue = Object.values(getList)
+     console.log(objValue)
+
+
+
+
+
+
+
+    // result.forEach((item, ) => {
+    //     if (item['age'] > item['age']) {
+    //         const firstObj = result.shift()
+    //         result.push(firstObj)
+    //     }
+    // });
+    return getList;
 
 }
 const result = getCustomersList(customers);
