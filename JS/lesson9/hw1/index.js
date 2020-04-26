@@ -12,8 +12,9 @@ const customers = {
 
 
 
-const newCustom = Object.assign({}, customers)
-console.log(newCustom)
+// const newCustom = Object.assign({}, customers)
+const newCustom = {...customers}
+
 
 const getCustomersList = customersGet => {
 
@@ -74,6 +75,6 @@ const getCustomersList = customersGet => {
 
     // return getListArr;
 
-
-const result2 = getCustomersList(customers);
-console.log(result2);
+const result = getCustomersList(newCustom);
+// console.log(result);
+// console.log(customers)
