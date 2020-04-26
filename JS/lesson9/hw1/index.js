@@ -20,7 +20,7 @@ const getCustomersList = (obj) => {
     values.sort((a, b) => a.age - b.age);
     return values;
   };
-  const result = getCustomersList(customers);
+  const result = getCustomersList(newObj);
   console.log(result);
 
 // const getCustomersList = customersGet => {
