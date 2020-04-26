@@ -9,18 +9,31 @@ const customers = {
         age: 17,
     },
 }
+const newObj = {...customers}
 
-const getCustomersList = customersGet => {
+const getCustomersList = (obj) => {
+    const arrUsers = Object.keys(newObj);
+    const values = Object.values(newObj);
+    values.reduce((acc, elm, index) => {
+      return (acc = elm.id = arrUsers[index]);
+    }, {});
+    values.sort((a, b) => a.age - b.age);
+    return values;
+  };
+  const result = getCustomersList(customers);
+  console.log(result);
 
-    const getListArr = Object.entries(customersGet);
-    const copyCustumers = getListArr.slice()
+// const getCustomersList = customersGet => {
+
+//     const getListArr = Object.entries(customersGet);
+//     const copyCustumers = getListArr.slice()
 
 
-    const newArr = [];
-    const getSomeFind = copyCustumers.map(item => {
-        const getId1 = item.shift()
-        item[0].id = getId1
-
+//     const newArr = [];
+//     const getSomeFind = copyCustumers.map(item => {
+//         const getId1 = item.shift()
+//         item[0].id = getId1
+//         copyCustumers.sort((a, b) => a.age - b.age);
 
         // const getListValue = Object.values(item);
         // console.log(getListValue)
@@ -30,15 +43,15 @@ const getCustomersList = customersGet => {
     //       result[el] = el;
     //   });
     
-    });
+    // });
 
     //  const getId1 = copyCustumers[0].shift()
     //  const getId2 = copyCustumers[1].shift()
     //  copyCustumers[0][0].id = getId1;
     //  copyCustumers[1][0].id = getId2;
 
-    return getListArr;
+//     return getListArr;
 
-}
-const result = getCustomersList(customers);
-console.log(result);
+// }
+// const result = getCustomersList(customers);
+// console.log(result);
