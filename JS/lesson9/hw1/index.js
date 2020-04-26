@@ -9,7 +9,28 @@ const customers = {
         age: 17,
     },
 }
-// const newObj = {...customers}
+
+
+
+const newCustom = Object.assign({}, customers)
+console.log(newCustom)
+
+const getCustomersList = customersGet => {
+
+    const getListArr = Object.entries(newCustom);
+    const values = Object.values(newCustom);
+    const keysCustom = Object.keys(newCustom);
+   
+    values.reduce((acc, element, index) => {
+              return (acc = element.id = keysCustom[index]);
+            }, {});
+            values.sort((a, b) => a.age - b.age);
+     return values;
+
+
+
+}
+
 
 // const getCustomersList = (obj) => {
 //     const arrUsers = Object.keys(newObj);
@@ -22,25 +43,6 @@ const customers = {
 //   };
 //   const result = getCustomersList(newObj);
 //   console.log(result);
-
-
-
-const getCustomersList = customersGet => {
-
-    const getListArr = Object.entries(customersGet);
-    const values = Object.values(customersGet);
-    const keysCustom = Object.keys(customersGet);
-   
-    values.reduce((acc, element, index) => {
-              return (acc = element.id = keysCustom[index]);
-            }, {});
-            values.sort((a, b) => a.age - b.age);
-     return values;
-
-
-
-}
-
 
 //     const getListArr = Object.entries(customersGet);
 //     const copyCustumers = getListArr.slice()
