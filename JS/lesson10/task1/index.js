@@ -4,7 +4,7 @@ function getFiniteNumbers(getArr){
     const finitNum = getArr.filter(item => Number.isFinite(item));
     return finitNum;
 }
-const result = getFiniteNumbers(arr)
+// const result = getFiniteNumbers(arr)
 // console.log(result)
 
 //isFinite
@@ -12,7 +12,7 @@ function getFiniteNumbersV2(getArr){
     const isFinitNum = getArr.filter(item => isFinite(item));
     return isFinitNum;
 }
-const result2 = getFiniteNumbersV2(arr)
+// const result2 = getFiniteNumbersV2(arr)
 // console.log(result2)
 
 const isFinite = result1 == result2;
@@ -22,7 +22,7 @@ function getNaN(getArr){
     const getIsNaN = getArr.filter(item => Number.isNaN(item));
     return getIsNaN;
 }
-const result3 = getNaN(arr)
+// const result3 = getNaN(arr)
 // console.log(result3)
 
 
@@ -32,7 +32,7 @@ function getNaNV2(getArr){
     return getIsNaN;
 }
 
-const result4 = getNaNV2(arr)
+// const result4 = getNaNV2(arr)
 // console.log(result4)
 const NanArque = result3 == result4;
 
@@ -42,5 +42,5 @@ function getIntegers(getArr){
     return getInt;
 }
 
-const result5 = getIntegers(arr)
+// const result5 = getIntegers(arr)
 // console.log(result5)
