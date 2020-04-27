@@ -24,9 +24,9 @@ const getPeople = (obj) => {
     const arrObj = values.flat();
     return arrObj.map((value) => value.name);
   };
-  const result = getPeople(rooms);
-  console.log(result);
-  
+//   const result = getPeople(rooms);
+//   console.log(result);
+
 // function getPeople(obj){
 //    const arrRooms =  Object.values(obj);
 //    console.log(arrRooms)
