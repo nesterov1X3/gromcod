@@ -28,5 +28,5 @@ const customers = {
 
 
 
-const result = getCustomersList(customers);
-console.log(result);
+// const result = getCustomersList(customers);
+// console.log(result);
