@@ -6,4 +6,4 @@ const multiRound = num =>
     Math.trunc(num * 100) / 100,
     num.toFixed(2),
 ]
-// console.log(multiRound(3.32543))
+console.log(multiRound(3.32543))
