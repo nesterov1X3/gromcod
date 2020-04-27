@@ -14,6 +14,10 @@ const rooms = {
         {name: 'room3 name3'},
     ],
 };
-const getPeople = (objRooms => {
-    const
+
+const getPeople = objRooms => {
+   const arrLinear =  Object.entries(objRooms);
+    return arrLinear
 }
+const result = getPeople(rooms)
+console.log(result)
