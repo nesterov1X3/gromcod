@@ -11,8 +11,8 @@ const customers = {
 }
 
 // const newCustom = Object.assign({}, customers)
-
- const newCustom = {...customers}
+let newCustom = customers;
+//  const newCustom = {...customers}
  
 
 
