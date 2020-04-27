@@ -11,15 +11,15 @@ const customers = {
 }
 
 // const newCustom = Object.assign({}, customers)
-let newCustom = customers;
+// let newCustom = customers;
 //  const newCustom = {...customers}
  
 
 
 const getCustomersList = customersGet => {
     // const getListArr = Object.entries(newCustom);
-    const values = Object.values(customers);
-    const keysCustom = Object.keys(customers);
+    const values = Object.values(customersGet);
+    const keysCustom = Object.keys(customersGet);
    
     values.reduce((acc, element, index) => {
               return (acc = element.id = keysCustom[index]);
