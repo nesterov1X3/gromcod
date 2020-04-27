@@ -13,13 +13,21 @@ const customers = {
 // const newCustom = Object.assign({}, customers)
 // let newCustom = customers;
 //  const newCustom = {...customers}
- 
+let newCustom = JSON.parse(JSON.stringify(customers));
 
+function copy(customers) {
+    let objCopy = {}; // objCopy будет хранить копию mainObj
+    let key;
+  
+    for (key in customers) {
+      objCopy[key] = customers[key]; // копирует каждое свойство objCopy
+    }
+  }
 
 const getCustomersList = customersGet => {
     // const getListArr = Object.entries(newCustom);
-    const values = Object.values(customersGet);
-    const keysCustom = Object.keys(customersGet);
+    const values = Object.values(newCustom);
+    const keysCustom = Object.keys(newCustom);
    
     values.reduce((acc, element, index) => {
               return (acc = element.id = keysCustom[index]);
