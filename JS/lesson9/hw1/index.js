@@ -10,9 +10,9 @@ const customers = {
     },
 }
 
-const newCustom = Object.assign({}, customers)
-
 // const newCustom = Object.assign({}, customers)
+
+ const newCustom = {...customers}
  
 
 
