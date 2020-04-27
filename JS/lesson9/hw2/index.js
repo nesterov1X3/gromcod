@@ -15,9 +15,26 @@ const rooms = {
     ],
 };
 
-const getPeople = objRooms => {
-   const arrLinear =  Object.entries(objRooms);
-    return arrLinear
-}
-const result = getPeople(rooms)
-console.log(result)
+const getPeople = (obj) => {
+    if (Object.keys(obj).length === 0) {
+      return [];
+    }
+    const values = Object.values(obj);
+    values.reduce((acc, elem) => (acc = elem));
+    const arrObj = values.flat();
+    return arrObj.map((value) => value.name);
+  };
+  const result = getPeople(rooms);
+  console.log(result);
+  
+// function getPeople(obj){
+//    const arrRooms =  Object.values(obj);
+//    console.log(arrRooms)
+//    const namesOfRooms =  arrRooms.map(( room ) =>{
+//     ({  ...room })
+    
+// });
+//     return namesOfRooms
+// }
+// const result = getPeople(rooms)
+// console.log(result)
