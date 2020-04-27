@@ -10,17 +10,17 @@ const customers = {
     },
 }
 
-let newCustom = {
-    'customer-id-1': {
-        name: 'William',
-        age: 54,
-    },
+const newCustom = Object.assign({}, {'customer-id-1': {
+    name: 'William',
+    age: 54,
+},
 
-    'customer-id-2': {
-        name: 'Tom',
-        age: 17,
-    },
+'customer-id-2': {
+    name: 'Tom',
+    age: 17,
+},
 }
+)
 
 // const newCustom = Object.assign({}, customers)
  
