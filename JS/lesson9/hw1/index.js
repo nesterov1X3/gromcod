@@ -17,7 +17,7 @@ let newCustom = customers;
 
 
 const getCustomersList = customersGet => {
-    const getListArr = Object.entries(newCustom);
+    // const getListArr = Object.entries(newCustom);
     const values = Object.values(newCustom);
     const keysCustom = Object.keys(newCustom);
    
@@ -72,6 +72,6 @@ const getCustomersList = customersGet => {
 
     // return getListArr;
 
-const result = getCustomersList(customers);
+const result = getCustomersList(newCustom);
 console.log(result);
 // console.log(customers)
