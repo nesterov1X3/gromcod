@@ -10,25 +10,32 @@ const customers = {
     },
 }
 
+let newCustom = {
+    'customer-id-1': {
+        name: 'William',
+        age: 54,
+    },
 
+    'customer-id-2': {
+        name: 'Tom',
+        age: 17,
+    },
+}
 
 // const newCustom = Object.assign({}, customers)
-// const newCustom = {...customers}
+ 
 
 
 const getCustomersList = customersGet => {
-
-    const getListArr = Object.entries(customersGet);
-    const values = Object.values(customersGet);
-    const keysCustom = Object.keys(customersGet);
+    const getListArr = Object.entries(newCustom);
+    const values = Object.values(newCustom);
+    const keysCustom = Object.keys(newCustom);
    
     values.reduce((acc, element, index) => {
               return (acc = element.id = keysCustom[index]);
             }, {});
             values.sort((a, b) => a.age - b.age);
      return values;
-
-
 
 }
 
