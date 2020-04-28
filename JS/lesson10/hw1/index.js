@@ -1,8 +1,8 @@
-const  arr = [4, 5.499, 54, 3]
-function getTotalPrice(arr){
-    const getSum = arr.reduce((acc, el) => acc + el);
-    return totalSumPrice = Math.floor(getSum * 100) / 100 
-   
+const numbersList = [4, 6, 7, 3]
+const getTotalPrice  = (arr) => {
+  const sum = arr .reduce(function callback(acc, num){
+    return acc + num
+  }, 0);
+  return '$' + Math.floor(sum * 100) / 100;
 }
-const result = getTotalPrice(arr);
-console.log(result + '$')
+const result = getTotalPrice(numbersList)
