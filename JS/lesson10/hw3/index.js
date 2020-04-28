@@ -7,5 +7,5 @@ const superRound = ((num, kof) =>
     +num.toFixed(kof),
 ]);
 
-const result = superRound(Math.PI, 2)
+const result = superRound(4.434, 2)
 console.log(result)
