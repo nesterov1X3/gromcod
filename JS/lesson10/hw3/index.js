@@ -7,5 +7,5 @@ const superRound = ((num, kof) =>
     +num.toFixed(kof),
 ]);
 
-// const result = superRound(-3.332, 2)
+ const result = superRound(Math.abs(-3.332), 2)
 // console.log(result)
