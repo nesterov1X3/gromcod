@@ -1,23 +1,27 @@
-function getRandomNumbers(len, min, max){
-    let arr = [];
+function getRandomNumbers(len, min, max) {
+    let arr = new Array(len);
     // arr[0] = min;
     // arr[arr.length - 1] = max;
-    if(min > max) {
+
+    if (min > max) {
         return null
     }
+    // if(Number.isFloat(arr)){
+    //   return null;
+    // }
+    arr = [4, 6, 1, 3]
+    const randomNum = arr.map(item =>
+        Math.random(item) * (max - min) + min);
+    const intNum = randomNum.map(item =>
+        Math.trunc(item));
+
+        return intNum
     
-    for( let i= min; i < max; i++){
-        arr.push(random(min, max))
-     }
-     
-     function random(){
-        let rand = min - 0.5 + Math.random() * (max - min +1)
-        rand = Math.round(rand)     
-        return rand;
-    }
-    return arr
+
+
+   
 }
-const result = getRandomNumbers(4, 6, 14)
-console.log(result)
+const result = getRandomNumbers(4, 6, 10)
+// console.log(result)
 
 
