@@ -8,4 +8,4 @@ const superRound = ((num, kof) =>
 ]);
 
 const result = superRound(4.434, 2)
-console.log(result)
+// console.log(result)
