@@ -6,6 +6,10 @@ function getRandomNumbers(len, min, max) {
     if(getIntegers == true){
         return null
     }
+    const noNumbersBetween = to - from < 1 && Math.ceil(to) === Math.ceil(from);
+  if (noNumbersBetween) {
+    return null;
+  }
     const searchNum = new Array(len).fill()
 
     const randomNum = searchNum.map(item =>
@@ -20,8 +24,3 @@ const result = getRandomNumbers(4, 6, 8)
 // console.log(result)
 
 
-function getIntegers(arr){
-    const getInt = arr.map(item => Number.isInteger(item));
-    
-}
-const res = getIntegers(arr)
