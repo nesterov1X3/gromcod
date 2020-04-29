@@ -12,5 +12,5 @@ const splitText = (text, len) => {
     }
     return strArr.join('\n');
 }
-const result = splitText('dsqccccasefwea', 4)
+// const result = splitText('dsqccccasefwea', 4)
 // console.log(result)
