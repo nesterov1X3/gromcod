@@ -19,7 +19,7 @@ function getRandomNumbers(len, min, max) {
 
     return intNum;
 }
-const result = getRandomNumbers(4, 6, 10)
-console.log(result)
+const result = getRandomNumbers(4, 6, 14)
+// console.log(result)
 
 
