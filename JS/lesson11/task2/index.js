@@ -25,7 +25,7 @@ const contacts = [
     },
 ]
 
-const sortContacts = (contacts, bool) => {
+const sortContacts = (contacts, bool = true) => {
     if(!Array.isArray(contacts)){
         return null
     }
@@ -40,5 +40,5 @@ const sortContacts = (contacts, bool) => {
     
      return result;
 }
-const result = sortContacts(contacts, false)
+const result = sortContacts(contacts)
 console.log(result)
