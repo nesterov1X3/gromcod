@@ -9,7 +9,7 @@ function getRandomNumbers(len, min, max) {
         }
     }
     const searchNum = arr.fill(len, 0, 4)
-  
+    // new Array(length).fill(len, 0, 4)
     const randomNum = searchNum.map(item =>
        (min + (max - min))  * Math.random(item));
     const intNum = randomNum.map(item =>
@@ -18,6 +18,6 @@ function getRandomNumbers(len, min, max) {
     return intNum;
 }
 const result = getRandomNumbers(4, 6, 10)
-console.log(result)
+// console.log(result)
 
 
