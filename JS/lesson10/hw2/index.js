@@ -7,7 +7,7 @@ function getRandomNumbers(len, min, max) {
     //     if(!Number.isInteger(i)){
     //         return null
     //     }
-    }
+    // }
     // const searchNum = arr.fill()
     // new Array(length).fill()
     const searchNum = new Array(len).fill()
