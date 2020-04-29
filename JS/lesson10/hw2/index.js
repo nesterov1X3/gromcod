@@ -17,7 +17,7 @@ function getRandomNumbers(len, min, max) {
     return intNum;
 }
 const result = getRandomNumbers(4, 6, 8)
-console.log(result)
+// console.log(result)
 
 
 function getIntegers(arr){
