@@ -3,9 +3,6 @@ function getRandomNumbers(len, min, max) {
     if (min > max) {
         return null
     }
-    if(getIntegers == true){
-        return null
-    }
     const noNumbersBetween = to - from < 1 && Math.ceil(to) === Math.ceil(from);
   if (noNumbersBetween) {
     return null;
