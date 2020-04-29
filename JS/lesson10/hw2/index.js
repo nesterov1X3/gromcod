@@ -3,11 +3,9 @@ function getRandomNumbers(len, min, max) {
     if (min > max) {
         return null
     }
-    function getIntegers(arr){
-        const getInt = arr.map(item => Number.isInteger(item));
-        return null;
+    if(getIntegers == true){
+        return null
     }
-    const res = getIntegers(arr)
     const searchNum = new Array(len).fill()
 
     const randomNum = searchNum.map(item =>
@@ -22,3 +20,8 @@ const result = getRandomNumbers(4, 6, 8)
 console.log(result)
 
 
+function getIntegers(arr){
+    const getInt = arr.map(item => Number.isInteger(item));
+    
+}
+const res = getIntegers(arr)
