@@ -8,9 +8,9 @@ function getRandomNumbers(len, min, max) {
             return null
         }
     }
-    const searchNum = arr.fill()
+    // const searchNum = arr.fill()
     // new Array(length).fill()
-    // const searchNum = new Array(length).fill()
+    const searchNum = new Array(len).fill()
 
     const randomNum = searchNum.map(item =>
        (min + (max - min))  * Math.random(item));
