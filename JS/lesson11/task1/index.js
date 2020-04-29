@@ -1,4 +1,7 @@
 const splitText = (text, len) => {
+    if(typeof text !== 'string'){
+        return null;
+    }
     const strArr = [];
     let startPosition = 0;
     while(true) {
@@ -12,5 +15,5 @@ const splitText = (text, len) => {
     }
     return strArr.join('\n');
 }
-// const result = splitText('dsqccccasefwea', 4)
+const result = splitText('dsqccccasefwea', 4)
 // console.log(result)
