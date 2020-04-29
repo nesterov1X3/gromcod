@@ -3,8 +3,8 @@ function getRandomNumbers(len, min, max) {
     if (min > max) {
         return null
     }
-    const noNumbersBetween = max - min < 1 && Math.ceil(max) === Math.ceil(min);
-  if (noNumbersBetween) {
+    const noNum = max - min < 1 && Math.ceil(max) === Math.ceil(min);
+  if (noNum) {
     return null;
   }
     const searchNum = new Array(len).fill()
