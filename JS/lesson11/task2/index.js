@@ -31,11 +31,11 @@ const sortContacts = (contacts, bool = true) => {
     }
     if(bool == true){
      const result = contacts.sort((a, b) => {
-         return a.name.localeCompare(b.name)
+         return b.name.localeCompare(a.name)
      });
     }else(bool == false)
         const result = contacts.sort((a, b) => {
-        return b.name.localeCompare(a.name)
+        return a.name.localeCompare(b.name)
     });
     
      return result;
