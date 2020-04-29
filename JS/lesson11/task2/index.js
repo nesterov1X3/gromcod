@@ -29,16 +29,15 @@ const sortContacts = (contacts, bool = true) => {
     if(!Array.isArray(contacts)){
         return null
     }
-    if(bool == true){
-     const result = contacts.sort((a, b) => {
-         return b.name.localeCompare(a.name)
-     });
-    }else(bool == false)
-        const result = contacts.sort((a, b) => {
+    let result = contacts.sort((a, b) => {
         return a.name.localeCompare(b.name)
     });
-    
+    if(bool == false){
+        result = contacts.sort((a, b) => {
+            return b.name.localeCompare(a.name)
+        }); 
+    }
      return result;
 }
-const result = sortContacts(contacts)
-console.log(result)
+const result1 = sortContacts(contacts, false)
+// console.log(result1)
