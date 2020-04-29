@@ -3,7 +3,7 @@ function getRandomNumbers(len, min, max) {
     if (min > max) {
         return null
     }
-    const noNumbersBetween = to - from < 1 && Math.ceil(to) === Math.ceil(from);
+    const noNumbersBetween = max - min < 1 && Math.ceil(max) === Math.ceil(min);
   if (noNumbersBetween) {
     return null;
   }
