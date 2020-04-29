@@ -3,10 +3,10 @@ function getRandomNumbers(len, min, max) {
     if (min > max) {
         return null
     }
-    for(let i =0 ; i <= arr.length; i++){
-        if(!Number.isInteger(i)){
-            return null
-        }
+    // for(let i =0 ; i <= arr.length; i++){
+    //     if(!Number.isInteger(i)){
+    //         return null
+    //     }
     }
     // const searchNum = arr.fill()
     // new Array(length).fill()
