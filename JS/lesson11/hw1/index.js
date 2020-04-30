@@ -10,11 +10,11 @@ const splitString = (text, len = 10) => {
             break;
         } 
         startPosition += len;
-        strArr.push(chunk[0].toUpperCase() + chunk.slice(1) && chunk.padEnd(len, '.'))
-
+        strArr.push(chunk.padEnd(len, '.'))
     }
-    
     return strArr.join('\n');
 }
-const result = splitString('dsqchgfefefefgcsefwea', 4)
+const result = splitString('dsqchgfefefefgcsefwea', 6)
 // console.log(result)
+
+//chunk[0].toUpperCase() + chunk.slice(1) &&
