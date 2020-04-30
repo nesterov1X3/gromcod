@@ -1,4 +1,4 @@
-const splitText = (text, len = 10) => {
+const splitString = (text, len = 10) => {
     if(typeof text !== 'string'){
         return null;
     }
@@ -16,5 +16,5 @@ const splitText = (text, len = 10) => {
     
     return strArr.join('\n');
 }
-const result = splitText('dsqchgfefefefgcsefwea', 4)
+const result = splitString('dsqchgfefefefgcsefwea', 4)
 // console.log(result)
