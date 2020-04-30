@@ -3,7 +3,6 @@ const splitString = (text, len = 10) => {
         return null;
     }
     const strArr = [];
-    let partString = text.split(len)
     let startPosition = 0;
     while(true) {
         
@@ -11,12 +10,12 @@ const splitString = (text, len = 10) => {
         if(chunk.length === 0){
             break;
         } 
-        
-        partString.push( chunk.padEnd(len, '.'))
+        strArr.push(chunk.split(len) && chunk.padEnd(len, '.'));
         startPosition += len;
-        
+
     }
-    return partString.join('\n');
+    
+    return strArr.join('\n');
 }
 const result = splitString('some message with the text', 12)
 console.log(result)
