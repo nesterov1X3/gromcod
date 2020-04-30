@@ -35,5 +35,5 @@ const splitString = (str, len = 10) => {
     }
     return result.join('\n');
 };
-// const result = splitString('some message with the text', 12)
+const result = splitString('some message with the text', 12)
 // console.log(result)
