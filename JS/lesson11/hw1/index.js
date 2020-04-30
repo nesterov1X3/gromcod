@@ -9,12 +9,12 @@ const splitString = (text, len = 10) => {
         if(chunk.length === 0){
             break;
         } 
-        strArr.push(chunk.padEnd(len, '.'))
+        strArr.push(text.split('\n') && chunk.padEnd(len, '.'))
         startPosition += len;
         
     }
     return strArr.join('\n');
 }
 const result = splitString('some message with the text', 12)
-// console.log(result)
+console.log(result)
 
