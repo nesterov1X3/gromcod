@@ -14,8 +14,7 @@
 //     }
 //     return strArr.join('\n');
 // }
-// const result = splitString('some message with the text', 12)
-// console.log(result)
+
 
 const splitString = (str, len = 10) => {
     if (typeof str !== 'string') {
@@ -34,5 +33,7 @@ const splitString = (str, len = 10) => {
         result.push(chunk);  
         start += len; 
     }
-    return result;
+    return result.join('\n');
 };
+// const result = splitString('some message with the text', 12)
+// console.log(result)
