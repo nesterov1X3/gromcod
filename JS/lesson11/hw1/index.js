@@ -9,12 +9,12 @@ const splitString = (text, len = 10) => {
         if(chunk.length === 0){
             break;
         } 
-        startPosition += len;
         strArr.push(chunk.padEnd(len, '.'))
+        startPosition += len;
+        
     }
     return strArr.join('\n');
 }
-const result = splitString('dsqchgfefefefgcsefwea', 6)
+const result = splitString('some message with the text', 12)
 // console.log(result)
 
-//chunk[0].toUpperCase() + chunk.slice(1) &&
