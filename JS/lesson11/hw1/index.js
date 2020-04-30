@@ -9,7 +9,8 @@ const splitString = (text, len = 10) => {
         if(chunk.length === 0){
             break;
         } 
-        strArr.push(chunk.split(len) && chunk.padEnd(len, '.'));
+         strArr.push(chunk.split(len))
+        // strArr.push(text.split(len) && chunk.padEnd(len, '.'));
         startPosition += len;
 
     }
