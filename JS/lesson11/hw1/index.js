@@ -33,7 +33,7 @@ const splitString = (str, len = 10) => {
         result.push(chunk);  
         start += len; 
     }
-    return result.join('\n');
+    return result;
 };
 const result = splitString('some message with the text', 12)
 // console.log(result)
