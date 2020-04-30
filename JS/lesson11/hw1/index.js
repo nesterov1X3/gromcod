@@ -8,12 +8,13 @@ const splitText = (text, len = 10) => {
         let chunk = text.substr(startPosition, len);
         if(chunk.length === 0){
             break;
-        }
-        strArr.push(chunk[0].toUpperCase() + chunk.slice(1))
-        startPosition += len
-        
+        } 
+        startPosition += len;
+        strArr.push(chunk[0].toUpperCase() + chunk.slice(1) + chunk.padEnd(len, '.'))
+
     }
+    
     return strArr.join('\n');
 }
-const result = splitText('dsqccccasefwea', 4)
+const result = splitText('dsqchgfgcsefwea', 4)
 // console.log(result)
