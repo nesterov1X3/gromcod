@@ -6,7 +6,7 @@ function countOccurrences(str1, str2){
     return (str1.split(str2).length - 1)
     
 }
-const result = countOccurrences('i write some text for test', '');
+// const result = countOccurrences('i write some text for test', '');
 // console.log(result)
 
 
