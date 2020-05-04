@@ -1,8 +1,14 @@
 //input: arr;
 //output: arr
-const transactionList = ['1,9', '16,44 ', 7, '1 dollar']
+const transactionList = ['1.954', '16.44 ', 7, '1']
 function cleanTransactionList(arr){
-     const numToString = arr.map(item =>{
+
+    
+    const makeTwoNum = arr.map(item => {
+        return Number(item).toFixed(2)
+     });
+
+     const numToString = makeTwoNum.map(item =>{
         return  '$' + item 
      });
     
@@ -10,9 +16,7 @@ function cleanTransactionList(arr){
         return  item.trim() 
      });
 
-     const cleanLetters = cleanProbel.filter(item => {
-        
-     });
+     
 
     return cleanProbel;
 }
