@@ -1,7 +1,7 @@
 function reverseString(str){
-    if(str !==String){
-        return null;
-    }
+    // if(str !==String){
+    //     return null;
+    // }
     return str.split("").reverse().join("");
 
 }
