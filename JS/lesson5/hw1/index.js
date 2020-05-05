@@ -1,5 +1,5 @@
 
-function getSum(a, b){
+export function getSum(a, b){
     let result = 0;
     for( let i = a ; i <= b; i++){
        if(i % 2 === 0){
@@ -8,4 +8,5 @@ function getSum(a, b){
     }
     return result;
 }
+console.log(getSum(2, 6))
 

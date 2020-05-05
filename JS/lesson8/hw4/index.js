@@ -3,18 +3,18 @@ const user = {
 }
  
 //1
-function addPropertyV1(userData, userId){
+export function addPropertyV1(userData, userId){
     userData.id = userId;
     return userData
 }
-addPropertyV1(user, 6234343)
+// addPropertyV1(user, 6234343)
 
 //2
 function addPropertyV2(userData, userId){
     Object.assign(userData, { id: userId });
     return userData;
 }
-addPropertyV2(user, 4356234343 )
+// addPropertyV2(user, 4356234343 )
 
 //3
 function addPropertyV3(userData, userId){
@@ -22,7 +22,7 @@ function addPropertyV3(userData, userId){
     Object.assign( obj, userData, { id: userId })
     return obj;
 }
-addPropertyV3(user, 9999234343)
+// addPropertyV3(user, 9999234343)
 
 //4
 function addPropertyV4(userData, userId){
@@ -30,6 +30,6 @@ function addPropertyV4(userData, userId){
     
     return result;
 }
-console.log(addPropertyV4(user, 134332513))
+// console.log(addPropertyV4(user, 134332513))
 
 

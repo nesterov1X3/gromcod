@@ -1,4 +1,4 @@
-const reverseArray = numbers => {
+export const reverseArray = numbers => {
 
     if(!Array.isArray(numbers)){
         return null;
@@ -8,6 +8,5 @@ const reverseArray = numbers => {
     return arrReversNum;
 }
 
-const arr = [2, 5, 6];
-console.log(reverseArray(arr))
-console.log(arr)
+// const arr = [2, 5, 6];
+// console.log(reverseArray(arr))

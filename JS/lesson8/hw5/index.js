@@ -7,7 +7,7 @@ function addPropertyV1(obj, key, value){
     obj[key] = value;
     return obj
 }
-addPropertyV1(transition, 'currency', 'USD')
+// addPropertyV1(transition, 'currency', 'USD')
 
 //2
 function addPropertyV2(obj, key, value){
@@ -23,12 +23,12 @@ function addPropertyV3(obj, key, value){
     Object.assign( objNew, obj, { [key]: value })
     return objNew;
 }
-addPropertyV3(transition, 'currency', 'grivasik')
+// addPropertyV3(transition, 'currency', 'grivasik')
 
 //4
-function addPropertyV4(obj, key, value){
+ export function addPropertyV4(obj, key, value){
     const result = {...obj, [key]: value};
     
     return result;
 }
-addPropertyV4(transition, 'currency', 'grivasik')
+// addPropertyV4(transition, 'currency', 'grivasik')

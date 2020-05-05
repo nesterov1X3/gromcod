@@ -2,7 +2,7 @@
 //output -- nothing
 
 
-const getKeys = obj => {
+export const getKeys = obj => {
     const keysToArr = Object.keys(obj)
     //  const result = [];
      keysToArr.forEach(item => {
@@ -10,10 +10,10 @@ const getKeys = obj => {
     });
     // return result;
 }
-// obj = {
-//     name: 'Bob',
-//     age: 17,
-//     hair: "black",
-//     hant: true,
-// };
+obj = {
+    name: 'Bob',
+    age: 17,
+    hair: "black",
+    hant: true,
+};
 

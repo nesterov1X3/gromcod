@@ -7,7 +7,7 @@ const obj2 = {
     age: 172
 };
 
-function compareObjects(obj1, obj2){
+ export function compareObjects(obj1, obj2){
 
     //  JSON.stringify(obj1) === JSON.stringify(obj2)
 
@@ -17,5 +17,5 @@ function compareObjects(obj1, obj2){
         return false;
 }
 
-const result = compareObjects(obj1, obj2)
-console.log(result)
+// const result = compareObjects(obj1, obj2)
+// console.log(result)

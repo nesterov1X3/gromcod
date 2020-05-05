@@ -1,4 +1,4 @@
-const cloneArr = arr => {
+export const cloneArr = arr => {
     if(!Array.isArray(numbers)){
         return null;
     }
@@ -7,4 +7,4 @@ const cloneArr = arr => {
     return ArrayNumberClone
 }
 const numbers = [4, 6, 2, 5]
-console.log(cloneArr(numbers))
+// console.log(cloneArr(numbers))

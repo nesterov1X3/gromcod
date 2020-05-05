@@ -1,4 +1,4 @@
-const squareArray = numbers => {
+export const squareArray = numbers => {
     if(!Array.isArray(numbers)){
         return null;
     }
@@ -7,5 +7,5 @@ const squareArray = numbers => {
     });
     return arrSquare
 }
-const arr = [2, 5, 6];
-console.log(squareArray(1))
+// const arr = [2, 5, 6];
+// console.log(squareArray(1))

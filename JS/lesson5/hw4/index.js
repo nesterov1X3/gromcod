@@ -1,7 +1,6 @@
-function compareSums(a, b, c, d){
+export function compareSums(a, b, c, d){
     let result1 = 0;
     let result2 = 0;
-    // function sum(from, to){
         
         for(let i=a; i<=b; i++){
             result1 += i;
@@ -13,8 +12,9 @@ function compareSums(a, b, c, d){
         if(result1 > result2){
             return true;
         }else{
-            return false
+            return false;
         }
-    // }
+    
     
 }
+// console.log(compareSums(3, 4 , 5, 3))
