@@ -9,5 +9,5 @@ export function  sendMessage(name) {
     message = text;
 }
 
-console.log(sendMessage('Tom'))
-console.log(setMessage('Hello'))
+// console.log(sendMessage('Tom'))
+// console.log(setMessage('Hello'))
