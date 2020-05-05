@@ -5,7 +5,7 @@ export function  sendMessage(name) {
     console.log(`${name}, ${message} You ${sender}`);
 }
 
- function setMessage(text){
+ export function setMessage(text){
     message = text;
 }
 
