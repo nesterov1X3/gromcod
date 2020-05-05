@@ -5,9 +5,9 @@ export function  sendMessage(name) {
     console.log(`${name}, ${message} You ${sender}`);
 }
 
-export function setMessage(text){
+ function setMessage(text){
     message = text;
 }
 
-sendMessage('Tom');
-setMessage('Hello');
+console.log(sendMessage('Tom'))
+console.log(setMessage('Hello'))
