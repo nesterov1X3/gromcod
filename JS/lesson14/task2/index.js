@@ -8,7 +8,7 @@ const createMesseger = () => {
     }
 
     function setMessage(text) {
-        message = text + '!';
+        message = text;
     }
     function setSender(send) {
         sender = send;
