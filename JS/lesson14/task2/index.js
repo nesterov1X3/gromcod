@@ -15,12 +15,12 @@ const createMesseger = () => {
 };
 const messenger1 = createMesseger();
 
-messenger1.sendMessage('Bob');
+// messenger1.sendMessage('Bob');
 
 const messenger2 = createMesseger();
 
-messenger2.sendMessage('Tom');
+// messenger2.sendMessage('Tom');
 
-messenger2.setMessage('Hello!');
+// messenger2.setMessage('Hello!');
 
-messenger1.sendMessage('Ann');
+// messenger1.sendMessage('Ann');
