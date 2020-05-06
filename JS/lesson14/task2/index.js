@@ -13,11 +13,11 @@ const createMesseger = () => {
         setMessage
     };
 };
-const messenger1 = createMesseger();
+// const messenger1 = createMesseger();
 
 // messenger1.sendMessage('Bob');
 
-const messenger2 = createMesseger();
+// const messenger2 = createMesseger();
 
 // messenger2.sendMessage('Tom');
 
