@@ -1,9 +1,8 @@
-let message = 'Just learn it';
-let st = '!'
+let message = 'Just learn it!';
 
 export function  sendMessage(name) {
     const sender = 'Gromcode';
-    console.log(`${name}, ${message}${st} Your ${sender}`);
+    console.log(`${name}, ${message} Your ${sender}`);
 }
 
  export function setMessage(text){
@@ -11,5 +10,5 @@ export function  sendMessage(name) {
 }
 sendMessage('Ann')
 
-setMessage('Good job')
+setMessage('Good job!')
 sendMessage('Ann')
