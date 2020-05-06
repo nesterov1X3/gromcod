@@ -13,3 +13,4 @@ sendMessage('Ann')
 // console.log(setMessage('Hello'))
 
 setMessage('Good job!')
+sendMessage('Ann')
