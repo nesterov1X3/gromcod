@@ -1,7 +1,7 @@
-let sender = 'Gromcode';
-let message = 'Just learn it!';
-const createMesseger = () => {
 
+const createMesseger = () => {
+    let sender = 'Gromcode';
+    let message = 'Just learn it!';
     function sendMessage(name) {
 
         console.log(`${name}, ${message} Your ${sender}`);
