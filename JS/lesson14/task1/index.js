@@ -10,4 +10,4 @@ export function  sendMessage(name) {
 }
 
 sendMessage('Ann')
-console.log(setMessage('Hello'))
+// console.log(setMessage('Hello'))
