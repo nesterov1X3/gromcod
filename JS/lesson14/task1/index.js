@@ -11,4 +11,4 @@ export function  sendMessage(name) {
 sendMessage('Ann')
 
 setMessage('Good job')
-// sendMessage('Ann')
+sendMessage('Ann')
