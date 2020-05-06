@@ -10,5 +10,5 @@ export function  sendMessage(name) {
 }
 sendMessage('Ann')
 
-setMessage('Good job')
+// setMessage('Good job')
 // sendMessage('Ann')
