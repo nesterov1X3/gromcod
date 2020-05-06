@@ -7,11 +7,11 @@ export function add(a){
 
 
 export function decrease(b){
-     b -= memory ;
+      memory -= b;
   }
 
 export function reset(v){
-    memory = v;
+    memory = 0;
   }
 
 export function getMemo(){
