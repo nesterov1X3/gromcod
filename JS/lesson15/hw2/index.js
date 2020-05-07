@@ -6,8 +6,8 @@
     }
 
     function error(b = 'error'){
-      logger.push(b)
-      type = 'error'
+      logger.push(type = b)
+      
      }
 
      function log(c = 'User logged in'){
