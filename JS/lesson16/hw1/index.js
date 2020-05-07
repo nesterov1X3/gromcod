@@ -1,5 +1,5 @@
 
-export function createArrayOfFunctions(len = new Array()) {
+export function createArrayOfFunctions(len = 0) {
   if (!Number.isInteger(len)) {
     return null;
   }
