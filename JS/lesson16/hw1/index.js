@@ -1,12 +1,13 @@
 
 export function createArrayOfFunctions(len) {
   let arr = new Array(len)
-  for (var i = 0; i < 10; i++) {
+  for (let i = 0; i < len; i++) {
     arr[i] = function () {
       return i;
     }
   }
+  return arr
 }
 
 
-console.log(createArrayOfFunctions(4));
+// console.log(createArrayOfFunctions(4));
