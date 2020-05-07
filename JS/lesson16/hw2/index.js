@@ -1,4 +1,4 @@
-var foo = 1; 
+const foo = 1; 
 
 function bar() { 
     if (!foo) { 
