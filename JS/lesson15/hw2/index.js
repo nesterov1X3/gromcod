@@ -5,7 +5,7 @@
        type = 'warn'
     }
 
-    function error(b = 'Unexpected error on the site'){
+    function error(b = 'error'){
       logger.push(b)
       type = 'error'
      }
