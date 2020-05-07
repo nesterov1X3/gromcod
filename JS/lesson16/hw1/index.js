@@ -1,5 +1,5 @@
 
-export function createArrayOfFunctions(len) {
+export function createArrayOfFunctions(len = new Array()) {
   if (!Number.isInteger(len)) {
     return null;
   }
@@ -13,4 +13,4 @@ export function createArrayOfFunctions(len) {
 }
 
 
-console.log(createArrayOfFunctions());
+// console.log(createArrayOfFunctions());
