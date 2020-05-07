@@ -1,5 +1,8 @@
 
 export function createArrayOfFunctions(len) {
+  if (!Number.isInteger(len)) {
+    return null;
+  }
   let arr = new Array(len)
   for (let i = 0; i < len; i++) {
     arr[i] = function () {
@@ -10,4 +13,4 @@ export function createArrayOfFunctions(len) {
 }
 
 
-// console.log(createArrayOfFunctions(4));
+console.log(createArrayOfFunctions());
