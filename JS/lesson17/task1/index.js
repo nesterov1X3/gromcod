@@ -2,7 +2,7 @@
     firstName: 'John',
     lastName: 'Doe',
     getFullName: function(){
-        console.log(`${this.firstName} ${this.lastName}`)
+        return (`${this.firstName} ${this.lastName}`)
     }
 }
-// user.getFullName()
+user.getFullName()
