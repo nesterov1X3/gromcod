@@ -94,7 +94,7 @@ function sayName() {
 * создайте ф-цию sayStudentName которая будет выводить в консоль имя студента 'Tom'
 * используйте .bind и ф-цию sayName
 */
-function sayStudentName(){
+export function sayStudentName(){
   sayName.bind(student)()
 }
 console.log(sayStudentName())
@@ -102,7 +102,7 @@ console.log(sayStudentName())
 * создайте ф-цию sayBruceName которая будет выводить в консоль имя 'Bruce'
 * используйте ф-цию sayName и .bind с нужным объектом
 */
-function sayBruceName(){
+export function sayBruceName(){
   console.log(sayName.bind({name: 'Bruce'})())
 }
 sayBruceName()
@@ -125,7 +125,7 @@ function greeting(firstName, lastName) {
 * используйте ф-цию greeting и .bind с нужным объектом и аргументами
 * specialGreeting не должна принимать ни одного аргумента
 */
-function specialGreeting(){
+export function specialGreeting(){
   greeting.bind(company)()
 }
 console.log(specialGreeting())
