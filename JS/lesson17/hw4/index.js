@@ -5,8 +5,10 @@ export const user = {
 
 const getFullName = {
   getName() {
-    return `${this.firstName} ${this.lastName}`
+    return `${user.firstName} ${user.lastName}`
   }
 }
-const getFullNameByUs = getFullName.getName.bind(user)()
-console.log(getFullNameByUs);
+console.log(getFullName.getName());
+
+// const getFullNameByUs = getFullName.getName.bind(user)()
+// console.log(getFullNameByUs);
