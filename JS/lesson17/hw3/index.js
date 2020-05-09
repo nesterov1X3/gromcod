@@ -149,9 +149,9 @@ function getPopulation(population) {
 * getUkrainePopulation не должна принимать ни одного аргумента
 */
 export function getUkrainePopulation(){
-  console.log(getPopulation.bind(country, 43000)())
+ return getPopulation.bind(country, 43000)()
 }
-getUkrainePopulation()
+console.log(getUkrainePopulation())
 
 
 
