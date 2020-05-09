@@ -126,7 +126,7 @@ function greeting(firstName, lastName) {
 * specialGreeting не должна принимать ни одного аргумента
 */
 export function specialGreeting(){
-  greeting.bind(company)()
+  greeting.bind(company, 'Bob', 'Marley')()
 }
 console.log(specialGreeting())
 
@@ -148,6 +148,10 @@ function getPopulation(population) {
 * используйте ф-цию getPopulation и .bind с нужным объектом и аргументами
 * getUkrainePopulation не должна принимать ни одного аргумента
 */
+export function getUkrainePopulation(){
+  console.log(getPopulation.bind(country, 43000)())
+}
+getUkrainePopulation()
 
 
 
@@ -175,3 +179,7 @@ const anotherTransaction = {
 * используйте метод transaction.printTransaction и .bind с нужным объектом
 * printSpecialTransaction не должна принимать ни одного аргумента
 */
+export function printSpecialTransaction(){
+  transaction.printTransaction.bind(anotherTransaction)()
+}
+console.log(printSpecialTransaction())
