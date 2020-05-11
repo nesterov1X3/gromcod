@@ -5,7 +5,7 @@ export const user = {
     return `${this.firstName} ${this.lastName}`
   },
   setFullName(firstName, lastName ){
-       this.firstName1 = firstName,  this.lastName1 = lastName
+       this.firstName1 = firstName,  this.lastName1 = lastName;
   }
 }
 
@@ -13,5 +13,5 @@ export const user = {
 // const getFullNameByUs = user.getFullName.bind(user)()
 // console.log(getFullNameByUs);
 
-// console.log(user.setFullName(user.firstName, user.lastName));
+console.log(user.setFullName(user.firstName, user.lastName));
 // console.log(user);
