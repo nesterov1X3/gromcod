@@ -1,14 +1,11 @@
 export const user = {
   firstName: 'John',
-  lastName: 'Doe'
-}
-
-const getFullName = {
-  getName() {
-    return `${user.firstName} ${user.lastName}`
+  lastName: 'Doe',
+  getFullName(){
+    return `${this.firstName} ${this.lastName}`
   }
 }
-// console.log(getFullName.getName());
 
-// const getFullNameByUs = getFullName.getName.bind(user)()
-// console.log(getFullNameByUs);
+
+const getFullNameByUs = user.getFullName.bind(user)()
+console.log(getFullNameByUs);
