@@ -5,7 +5,7 @@ export const user = {
     return `${this.firstName} ${this.lastName}`
   },
   setFullName(firstName, lastName ){
-       this.firstName = "dad",  this.lastName = "sad"
+       this.firstName1 = firstName,  this.lastName1 = lastName
   }
 }
 
