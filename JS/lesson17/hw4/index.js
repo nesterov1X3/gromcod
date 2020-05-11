@@ -8,7 +8,7 @@ const getFullName = {
     return `${user.firstName} ${user.lastName}`
   }
 }
-console.log(getFullName.getName());
+// console.log(getFullName.getName());
 
 // const getFullNameByUs = getFullName.getName.bind(user)()
 // console.log(getFullNameByUs);
