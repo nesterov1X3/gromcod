@@ -12,14 +12,14 @@ export const ship = {
     __proto__: vehicle,
     name: 'Argo',
     startMachine(){
-        console.log(`${this.name} lifting anchour up`,),
+        console.log(`${this.name} lifting anchor up`,),
         this.move()
     },
     stopMachine(){
         this.stop(),
-        console.log(`${this.name} lifting anchour down`) 
+        console.log(`${this.name} lifting anchor down`) 
     },
     
 } 
 // Object.setPrototypeOf(ship,  vehicle )
-// ship.startMachine()
+ship.stopMachine()
