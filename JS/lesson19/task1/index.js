@@ -9,7 +9,6 @@ export const vehicle = {
 }
 
 export const ship = {
-    
     name: 'Argo',
     startMachine(){
         console.log(`${this.name} lifting anchour up`),
@@ -17,9 +16,9 @@ export const ship = {
     },
     stopMachine(){
         stop(),
-        console.log(`${this.name} lifting anchour up`) 
+        console.log(`${this.name} lifting anchour down`) 
     },
     __proto__: vehicle,
 } 
 
-ship.startMachine()
+// ship.startMachine()
