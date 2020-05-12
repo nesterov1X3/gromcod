@@ -8,7 +8,7 @@ export const event = {
         return this.guests
             .filter(({ age }) => age >= 18)
             .map(({name, email }) => ({
-                text: `Hi ${name}. ${this.message}`,
+                text: `Hi ${name}, ${this.message}`,
                 email
             }));
     }
