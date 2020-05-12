@@ -3,7 +3,7 @@ export const event = {
         {name: 'John', age: 18, email: 'example@server.com'},
         {name: 'Bob', age: 17, email: 'b@gmail.com'}
     ],
-    message: 'Welcome to the party',
+    message: 'Welcome to the party!',
     getInvintations(){
         return this.guests
             .filter(({ age }) => age >= 18)
@@ -14,4 +14,4 @@ export const event = {
     }
 }
 
-// console.log(event.getInvintations());
+console.log(event.getInvintations());
