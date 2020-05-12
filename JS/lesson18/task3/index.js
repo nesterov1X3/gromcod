@@ -1,15 +1,6 @@
-export function defer(func, ms){
-    return function(){
-       setTimeout(() => func.call(this, ...arguments), ms);
-    }
+export function sumOfSquares(){
+    return [...arguments].map(item => { 
+        return item * item 
+})
 }
-
-const user = {
-    name: 'Tom',
-    sayHi() {
-        console.log(`Hi, I'am ${this.name}!`)
-    }
-}
-
-const deferredHi = defer(user.sayHi.bind(user), 1000);
-deferredHi();
+// console.log(sumOfSquares(3, 4, 5, 32));
