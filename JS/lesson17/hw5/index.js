@@ -21,5 +21,9 @@ export const timer = {
       clearInterval(this._interval);
       this._interval = null;
   },
-  
+  resetTimer() {
+    this.stopTimer();
+    this.minsPassed = 0;
+    this.secondsPassed = 0;
+},
 };
