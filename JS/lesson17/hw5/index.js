@@ -16,5 +16,10 @@ export const timer = {
               this.secondsPassed = 0;
           }
       }, 5000);
-  }
-}
+  },
+  stopTimer() {
+      clearInterval(this._interval);
+      this._interval = null;
+  },
+  
+};
