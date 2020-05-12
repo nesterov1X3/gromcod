@@ -22,4 +22,4 @@ export const ship = {
     
 } 
 // Object.setPrototypeOf(ship,  vehicle )
-ship.stopMachine()
+// ship.stopMachine()
