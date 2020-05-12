@@ -26,4 +26,8 @@ export const timer = {
     this.minsPassed = 0;
     this.secondsPassed = 0;
 },
+getTime() {
+      const secondPassForm = secondsTime(this.secondsPassed);
+      return `${this.minsPassed}:${secondPassForm}`;
+  }
 };
