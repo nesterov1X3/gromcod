@@ -10,7 +10,7 @@ export function user(firstName, lastName) {
     }
 }
 
-const user1 = new User('John', 'Doe')
+const user1 = new user('John', 'Doe')
 
 console.log(user1.fullName);
 
