@@ -11,7 +11,7 @@ export function User(firstName, lastName) {
     }
 }
 
-export const user1 = new User('John', 'Doe')
+// export const user1 = new User('John', 'Doe')
 // console.log(user1.getFullName())
 
 
