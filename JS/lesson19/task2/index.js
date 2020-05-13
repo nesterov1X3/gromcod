@@ -21,19 +21,21 @@
             console.log(`${this.name} lifting anchor down`)
 
     },
-
 }
+
 export function getOwnProps(ship) {
  let resArrProp = []
-    for (let key in ship){
-        if(ship.hasOwnProperty(key)){
+    for (let key in ship ){
+        if(ship.hasOwnProperty(key) && typeof ship[key] !== 'function'){
             resArrProp.push(key)
+            
         }
+        
     }
     return resArrProp
 }
-const result = getOwnProps(ship)
-console.log(result);
+// const result = getOwnProps(ship)
+// console.log(result);
 
 
 
