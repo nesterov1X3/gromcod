@@ -1,4 +1,4 @@
-export const vehicle = {
+ const vehicle = {
     name: 'Kargo',
     move() {
         console.log(`${this.name} is moving`)
@@ -8,7 +8,7 @@ export const vehicle = {
     }
 }
 
-export const ship = {
+ const ship = {
     age: 300,
     __proto__: vehicle,
     name: 'Argo',
@@ -23,15 +23,17 @@ export const ship = {
     },
 
 }
-export function getOwnProp() {
+export function getOwnProps(ship) {
+ let resArrProp = []
     for (let key in ship){
         if(ship.hasOwnProperty(key)){
-        console.log(key);
+            resArrProp.push(key)
         }
-        
     }
+    return resArrProp
 }
-// getOwnProp()
+const result = getOwnProps(ship)
+console.log(result);
 
 
 
