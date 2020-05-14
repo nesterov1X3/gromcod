@@ -9,7 +9,7 @@
 
     }
 }
-export default User;
+// export default User;
 const user1 = new User('John', 'Doe')
 // console.log(user1.fullName())
 
