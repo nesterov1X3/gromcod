@@ -25,3 +25,4 @@ export class Order {
         return false
     }
 }
+const order1 = new Order(323, 'Houston', 'Buy')
