@@ -1,4 +1,4 @@
-class Order {
+export class Order {
     constructor(price, city, type){
         id = Math.random();
         this.price = price;
