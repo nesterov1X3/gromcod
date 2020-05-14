@@ -1,13 +1,14 @@
-class User {
+export class User {
     constructor(name, age) {
-      this.name = name;
-      this.age = age;
+        this.name = name;
+        this.age = age;
     }
-    static createEmpty(name, age){
+    static createEmpty(name, age) {
         const user = {
-        name: '',
-        age: null
+            name: '',
+            age: null
         }
+        return user
     }
     sayHi() {
         console.log(`Hi, I am ${this.name}`);
@@ -16,21 +17,21 @@ class User {
     requestNewPhoto() {
         console.log(`New photo request was sent for ${this.name}`);
     }
-    setAge(age) {
-        this.age = age;
-        if (this.age >= 25) {
-            console.log(`New photo request was sent for ${this.name}`);
-        }
-        if (this.age < 0) {
+    setAge(value) {
+        if (value < 0) {
             return false
-        } else {
-            return this.age
         }
+        this.age = value
+
+        if (value >= 25) {
+            this.requestNewPhoto()
+        }
+        return value
     }
 }
 
 const user1 = new User('Kevin', 20)
-// User.createEmpty('', null)
+// user1.setAge(63)
 
 
 
