@@ -30,4 +30,4 @@ getTime() {
       const secondPassForm = secondsTime(this.secondsPassed);
       return `${this.minsPassed}:${secondPassForm}`;
   }
-};
+}

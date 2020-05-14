@@ -1,28 +1,29 @@
 export class Order {
     constructor(price, city, type){
-        id = Math.random();
+        this.id = Math.random();
         this.price = price;
-        dateCreated = getTime();
-        isConfirmed = false;
-        dateConfirmed = new Date();
+        this.dateCreated = new Date();
+        this.isConfirmed = false;
+        this.dateConfirmed = new Date();
         this.city = city;
         this.type = type;
     }
     checkPrice(){
-        if(price > 1000){
+        if(this.price > 1000){
             return true
         }
         return false
     }
     confirmOrder(){
-        isConfirmed = true;
-        dateConfirmed = new Date();
+        this.isConfirmed = true;
+        this.dateConfirmed = new Date();
     }
     isValidType(){
-        if(type == 'Buy' && type == 'Sell'){
+        if(this.type == 'Buy' || this.type == 'Sell'){
             return true
         }
         return false
     }
 }
-const order1 = new Order(323, 'Houston', 'Buy')
+// const order1 = new Order(32232, 'Houston', 'Buy')
+// console.log(order1.isValidType());
