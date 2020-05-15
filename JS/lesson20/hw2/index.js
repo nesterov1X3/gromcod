@@ -1,17 +1,14 @@
 
-
-
-
-export class User {
-   get constructor(id, name, sessionld) {
+ class User {
+    constructor(id, name, sessionld) {
         this.id = id;
         this.name = name;
         this.sessionld = sessionld;
     }
 }
 
-export class extends UserRepository {
-    get constructor(id, name, sessionld) {
+ class extends UserRepository {
+     constructor(id, name, sessionld) {
         super(id, name, sessionld);
         this.users = [];
     }
