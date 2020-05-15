@@ -9,16 +9,17 @@ export class User {
 export class extends UserRepository {
     constructor(id, name, sessionld) {
         super(id, name, sessionld);
-        this.#users = [];
+        this.users = [];
     }
-
-    get #getUserNames() {
+    
+    
+    get getUserNames() {
         return this.#users.push(name);
     }
-    get #getUserIds() {
+    get getUserIds() {
         return this.#users.push(id);
     }
-    get #getUserNameById() {
+    get getUserNameById() {
         return name
     }
 }
