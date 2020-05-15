@@ -2,11 +2,11 @@ export class User {
     constructor(id, name, sessionold) {
         this.id = id;
         this.name = name;
-        this.sessionold = sessionold
+        this.sessionold = sessionold;
     }
 }
 
-export class UserRepository {
+export class extends UserRepository {
     constructor(id, name, sessionold) {
         super(id, name, sessionold);
         this.#users = [];
