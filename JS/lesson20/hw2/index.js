@@ -1,5 +1,9 @@
+
+
+
+
 export class User {
-    constructor(id, name, sessionld) {
+   get constructor(id, name, sessionld) {
         this.id = id;
         this.name = name;
         this.sessionld = sessionld;
@@ -7,19 +11,19 @@ export class User {
 }
 
 export class extends UserRepository {
-    constructor(id, name, sessionld) {
+    get constructor(id, name, sessionld) {
         super(id, name, sessionld);
         this.users = [];
     }
     
     
-    get getUserNames() {
+     getUserNames() {
         return this.#users.push(name);
     }
-    get getUserIds() {
+     getUserIds() {
         return this.#users.push(id);
     }
-    get getUserNameById() {
+    getUserNameById() {
         return name
     }
 }
