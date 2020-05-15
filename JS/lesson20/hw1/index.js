@@ -1,6 +1,6 @@
 export class Order {
     constructor(price, city, type){
-        this.id = Math.random(this.id);
+        this.id = String(Math.random());
         this.price = price;
         this.dateCreated = new Date();
         this.isConfirmed = false;
@@ -8,6 +8,7 @@ export class Order {
         this.city = city;
         this.type = type;
     }
+    
     checkPrice(){
         if(this.price > 1000){
             return true
@@ -25,5 +26,5 @@ export class Order {
         return false
     }
 }
-// const order1 = new Order(32232, 'Houston', 'Buy')
-// console.log(order1.id);
+const order1 = new Order(32232, 'Houston', 'Buy',)
+console.log(order1.id);
