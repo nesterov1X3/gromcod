@@ -12,19 +12,21 @@ class User {
         get name() {
             return this._name;
         }
-        get sessionld() {
-            return this.sessionId;
+        get _sessionId() {
+            return this._sessionId;
         }
     
 }
 
 class UserRepository extends User{
     constructor(users) {
-        this._users = Object.freeze(users);
+        this._users.map(item => {
+            return Object.freeze(item)
+        })
     }
-    get users() {
-        return this._users;
-    }
+    // get users() {
+    //     return this._users;
+    // }
 
     getUserNames() {
         return this.users.name
@@ -36,5 +38,9 @@ class UserRepository extends User{
         return sessionId
     }
 }
-const user1 = new User("213", "3223", "fsd34")
-console.log(user1);
+let user1 = new User('1', 'Tom', '0')
+let user2 = new User('2', 'Stiv', '1')
+let users = [user1, user2]
+let userrep1 = new UserRepository(users)
+console.log(userrep1);
+
