@@ -1,4 +1,4 @@
-
+//
 class User {
     constructor(id, name, sessionId) {
         this.id = id;
@@ -19,22 +19,11 @@ class User {
 }
 
 class UserRepository extends User{
-    constructor(id, name, sessionId) {
-        super(id, name, sessionId);
-        this.users = [User];
-        let frezeSomeObj = this.users.map(item => {
-            return  Object.freeze(item)
-         });
+    constructor(users) {
+        this._users = Object.freeze(users);
     }
-     
-    get id() {
-        return this._id;
-    }
-    get name() {
-        return this._name;
-    }
-    get sessionld() {
-        return this.sessionId;
+    get users() {
+        return this._users;
     }
 
     getUserNames() {
@@ -44,8 +33,8 @@ class UserRepository extends User{
         return this.users.id
     }
     getUserNameById() {
-        return name
+        return sessionId
     }
 }
-// const user1 = new User("213", "3223", "fsd34")
-// console.log(user1);
+const user1 = new User("213", "3223", "fsd34")
+console.log(user1);
