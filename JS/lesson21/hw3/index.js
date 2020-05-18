@@ -15,6 +15,6 @@ export function getPlans(){
 }
 
 export function getGoal(){
-     let getSomeGoal = document.querySelector('.plans')
+     let getSomeGoal = document.querySelector('.goal')
      return getSomeGoal.outerHTML
 }
