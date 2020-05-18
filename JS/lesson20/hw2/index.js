@@ -38,9 +38,9 @@ class UserRepository extends User{
         return sessionId
     }
 }
-let user1 = new User('33121', 'Kevin', '1')
-let user2 = new User('2', 'Stiv', '2')
-let usersProp = [user1, user2]
-let repFromUsers = new UserRepository(usersProp)
+// let user1 = new User('33121', 'Kevin', '1')
+// let user2 = new User('2', 'Stiv', '2')
+// let usersProp = [user1, user2]
+// let repFromUsers = new UserRepository(usersProp)
 // console.log(repFromUsers);
 
