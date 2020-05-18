@@ -1,18 +1,17 @@
 
 export class User {
     constructor(id, name, sessionId) {
-        this.id = id;
-        this.name = name;
-        this.sessionId = sessionId;
-        
-}
+        this._id = id;
+        this._name = name;
+        this._sessionId = sessionId;
+    }
         get id() {
             return this._id;
         }
         get name() {
             return this._name;
         }
-        get _sessionId() {
+        get sessionId() {
             return this._sessionId;
         }
     
@@ -20,9 +19,11 @@ export class User {
 
 export class UserRepository extends User{
     constructor(users) {
-        this._users.map(item => {
-            return Object.freeze(item)
-        })
+        super()
+        this._users = Object.freeze(users);
+        // this._users.map(item => {
+        //     return Object.freeze(item)
+        // })
     }
     get users() {
         return this._users;
@@ -38,9 +39,9 @@ export class UserRepository extends User{
         return sessionId
     }
 }
-// let user1 = new User('33121', 'Kevin', '1')
-// let user2 = new User('2', 'Stiv', '2')
-// let usersProp = [user1, user2]
-// let repFromUsers = new UserRepository(usersProp)
-// console.log(repFromUsers);
+let user1 = new User('33121', 'Kevin', '1')
+let user2 = new User('2', 'Stiv', '2')
+let usersProp = [user1, user2]
+let repFromUsers = new UserRepository(usersProp)
+console.log(repFromUsers);
 
