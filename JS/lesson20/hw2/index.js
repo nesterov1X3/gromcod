@@ -35,8 +35,8 @@ export class UserRepository extends User{
     getUserIds() {
         return this.users.map(item => item._id)
     }
-    getUserNameById() {
-        return this.users.map(item => item._sessionId)
+    getUserNameById(id) {
+        return this.users.find(item => item._id == id)._name
     }
 }
 let user1 = new User('33121', 'Kevin', '1')
@@ -45,4 +45,4 @@ let usersProp = [user1, user2]
 let repFromUsers = new UserRepository(usersProp)
 // console.log(repFromUsers);
 
-// console.log(repFromUsers.getUserNameById());
+// console.log(repFromUsers.getUserNameById(243));
