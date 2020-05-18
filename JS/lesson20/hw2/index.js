@@ -1,5 +1,5 @@
 
-class User {
+export class User {
     constructor(id, name, sessionId) {
         this.id = id;
         this.name = name;
@@ -18,7 +18,7 @@ class User {
     
 }
 
-class UserRepository extends User{
+export class UserRepository extends User{
     constructor(users) {
         this._users.map(item => {
             return Object.freeze(item)
