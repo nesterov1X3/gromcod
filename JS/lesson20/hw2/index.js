@@ -30,13 +30,13 @@ export class UserRepository extends User{
     }
 
     getUserNames() {
-        return this.users.name
+        return this.users._name
     }
     getUserIds() {
-        return this.users.id
+        return this.users._id
     }
     getUserNameById() {
-        return sessionId
+        return this.users._sessionId
     }
 }
 let user1 = new User('33121', 'Kevin', '1')
