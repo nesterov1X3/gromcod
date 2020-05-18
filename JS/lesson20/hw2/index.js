@@ -30,18 +30,19 @@ export class UserRepository extends User{
     }
 
     getUserNames() {
-        return this.users._name
+        return this._users.map(item => item._name)
     }
     getUserIds() {
-        return this.users._id
+        return this.users.map(item => item._id)
     }
     getUserNameById() {
-        return this.users._sessionId
+        return this.users.map(item => item._sessionId)
     }
 }
 let user1 = new User('33121', 'Kevin', '1')
-let user2 = new User('2', 'Stiv', '2')
+let user2 = new User('243', 'Stiv', '2')
 let usersProp = [user1, user2]
 let repFromUsers = new UserRepository(usersProp)
-console.log(repFromUsers);
+// console.log(repFromUsers);
 
+// console.log(repFromUsers.getUserNameById());
