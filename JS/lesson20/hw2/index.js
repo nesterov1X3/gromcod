@@ -1,4 +1,4 @@
-//
+
 class User {
     constructor(id, name, sessionId) {
         this.id = id;
@@ -24,9 +24,9 @@ class UserRepository extends User{
             return Object.freeze(item)
         })
     }
-    // get users() {
-    //     return this._users;
-    // }
+    get users() {
+        return this._users;
+    }
 
     getUserNames() {
         return this.users.name
@@ -40,7 +40,7 @@ class UserRepository extends User{
 }
 let user1 = new User('33121', 'Kevin', '1')
 let user2 = new User('2', 'Stiv', '2')
-let users = [user1, user2]
-let repFromUsers = new UserRepository(users)
+let usersProp = [user1, user2]
+let repFromUsers = new UserRepository(usersProp)
 // console.log(repFromUsers);
 
