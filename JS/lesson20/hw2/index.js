@@ -3,7 +3,7 @@ class User {
     constructor(id, name, sessionId) {
         this.id = id;
         this.name = name;
-        this.sessionId;
+        this.sessionId = sessionId;
         
 }
         get id() {
@@ -22,7 +22,7 @@ class UserRepository extends User{
     constructor(id, name, sessionId) {
         super(id, name, sessionId);
         this.users = [User];
-        this.users.map(item => {
+        let frezeSomeObj = this.users.map(item => {
             return  Object.freeze(item)
          });
     }
@@ -47,4 +47,5 @@ class UserRepository extends User{
         return name
     }
 }
-
+// const user1 = new User("213", "3223", "fsd34")
+// console.log(user1);
