@@ -2,8 +2,8 @@ export function getTitleElement(){
      console.dir(document.querySelector('.title'))
      return document.querySelector('.title')
 }
-// getInputElement()
+getInputElement()
 export function getInputElement(){
-     console.dir(document.querySelector("text"))
-     return document.querySelector("text")
+     console.dir(document.querySelector("input","text"))
+     return document.querySelector("input", "text")
 }
