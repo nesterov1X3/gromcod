@@ -1,4 +1,7 @@
 export function finishForm(){
+     const findAnotherEl = document.querySelector('input')
+     findAnotherEl.setAttribute('type', 'password')  
+
      const findElement = document.querySelector('.login-form')
      const makeingLogForm = document.createElement('input')
      makeingLogForm.setAttribute('type', 'text')
@@ -6,9 +9,9 @@ export function finishForm(){
      findElement.prepend(makeingLogForm)
      
 
-     const findAnotherEl = document.querySelector('.title')
-     findAnotherEl.setAttribute('type', 'password')
+    
       
+
       
 }
-// finishForm()
+finishForm()
