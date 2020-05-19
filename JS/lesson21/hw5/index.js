@@ -6,4 +6,4 @@ export function setButton(buttonText){
     createElement.textContent = buttonText;
 
 }
-// setButton('we are stupid')
+// setButton('we are ')
