@@ -22,4 +22,4 @@ let makeArr3 = Array.from(findSomeEl3)
 makeArr3.push(someEl3)
 findSomeEl3.dataset.squaredNumbers = makeArr3.map(item => item * item);
 }
-// squaredNumbers()
+squaredNumbers()
