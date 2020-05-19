@@ -8,10 +8,5 @@ export function finishForm(){
      makeingLogForm.setAttribute('name', 'login')
      findElement.prepend(makeingLogForm)
      
-
-    
-      
-
-      
 }
-finishForm()
+// finishForm()
