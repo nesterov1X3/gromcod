@@ -1,10 +1,7 @@
 export function setButton(buttonText){
-  let pro =  document.body.innerHTML;
-   pro = document.createElement('button')
-    document.createElement('button').textContent = buttonText
 
-   //    let getSomeEl = document.querySelector('body')
-//   getSomeEl.innerHTML = document.createElement('button');
-//   getSomeEl.textContent = buttonText
+  let getSomeEl = document.querySelector('body')
+   return getSomeEl.innerHTML = document.createElement('button',[is.buttonText]);
+   // getSomeEl.textContent = buttonText
 }
-// console.log(setButton('we are stupid'))
+console.log(setButton('we are stupid'))
