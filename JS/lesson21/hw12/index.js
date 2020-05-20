@@ -6,7 +6,7 @@ export function getSection(num) {
     
     
 }
-console.log(getSection(2))
+// getSection(2)
 
 
 
