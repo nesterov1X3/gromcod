@@ -1,9 +1,7 @@
 function changeSomeMean(){
-     console.log(inputElem);
+     console.log(findSomeEl.value);
      
 }
 const findSomeEl = document.querySelector('.text-input');
-const inputElem = findSomeEl.value
-
 
 findSomeEl.addEventListener('change', changeSomeMean)
