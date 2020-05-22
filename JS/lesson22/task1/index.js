@@ -29,13 +29,13 @@ spanElem.addEventListener('click', logGreenSpan)
 
 
 
-
+//очистка поля
 function someClear(){
-  form.innerHTML = null;
+  someArea.innerHTML = null;
 }
 
 let btnClear = document.querySelector('.clear-btn');
-let form = document.querySelector('.events-list');
+let someArea = document.querySelector('.events-list');
 
 btnClear.addEventListener('click', someClear)
 
