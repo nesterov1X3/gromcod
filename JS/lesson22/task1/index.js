@@ -39,7 +39,7 @@ let form = document.querySelector('.events-list');
 
 btnClear.addEventListener('click', someClear)
 
-
+//выключение обработчиков
 function remElement(){
   divElem.removeEventListener('click', logGreyDiv , true)
   divElem.removeEventListener('click', logGreenDiv)
@@ -53,6 +53,21 @@ function remElement(){
 }
 const removeEv = document.querySelector('.remove-handlers-btn')
 removeEv.addEventListener('click', remElement)
+
+//включение обработчиков
+function onElement(){
+  divElem.addEventListener('click', logGreyDiv , true)
+divElem.addEventListener('click', logGreenDiv)
+
+pElem.addEventListener('click', logGreyP , true)
+pElem.addEventListener('click',logGreenP )
+
+
+spanElem.addEventListener('click',logGreySpan , true)
+spanElem.addEventListener('click', logGreenSpan)
+}
+const onEv = document.querySelector('.attach-handlers-btn')
+onEv.addEventListener('click', onElement)
 
 // let btnClear = document.querySelector('.clear-btn');
 // let form = document.querySelector('.events-list');
