@@ -31,16 +31,28 @@ const tasks = [
   };
   renderListItems(tasks);
 
+
+
+//найти кнопку querySelector
+//создать li, задать ей стили
+//добавить ей значение input
+//запушить в массив
+//создать событие клик для create
+
   function addSomeInput(itemList){
-    const findBtn = document.querySelector('.create-task-btn');
+
     const findInput = document.querySelector('.task-input');
       const listItemElem = document.createElement("li");
-      listItemElem.textContent = findInput.value;
+      listItemElem.classList.add("list__item");
+      listItemElem.innerHTML = findInput.value;
     //   console.log(listItemElem.innerHTML = findInput.value);
-      
-    itemList.push(listItemElem);
+    
+   
+    itemList.append(...listItemElemtnts)
+    // itemList.push(listItemElem);
     
   }
   
-  
+  const findBtn = document.querySelector('.create-task-btn');
   findBtn.addEventListener('click', addSomeInput(tasks))
+

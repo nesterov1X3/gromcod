@@ -11,8 +11,10 @@ export const user = {
 }
 }
 
-// const getFullNameByUs = user.getFullName.bind(user)()
-// console.log(getFullNameByUs);
+const getFullNameByUs = user.getFullName.bind(user)()
+console.log(getFullNameByUs);
 
 // console.log(user.setFullName(user.firstName, user.lastName));
-// console.log(user);
+
+user.setFullName('Phil Jacksin')
+console.log(user);

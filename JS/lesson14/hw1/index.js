@@ -10,10 +10,15 @@ export function decrease(b){
       memory -= b;
   }
 
-export function reset(v){
+export function reset(){
     memory = 0;
   }
 
 export function getMemo(){
     return memory ;
   }
+add(43)
+decrease(32)
+
+reset()
+//  console.log(getMemo())
