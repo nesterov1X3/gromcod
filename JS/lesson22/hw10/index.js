@@ -34,22 +34,25 @@ const tasks = [
 
 
 //найти кнопку querySelector
-//создать li, задать ей стили
+//создать li, указать ей стили
 //добавить ей значение input
-//запушить в массив
+//добавить ее к списку
 //создать событие клик для create
 
   function addSomeInput(itemList){
-
-    const findInput = document.querySelector('.task-input');
-      const listItemElem = document.createElement("li");
+    const listElem = document.querySelector('.list')
+    const listItemElem = document.createElement("li");
+    const listItemsElems = itemList
+    .map(({text, done}) =>{
       listItemElem.classList.add("list__item");
-      listItemElem.innerHTML = findInput.value;
-    //   console.log(listItemElem.innerHTML = findInput.value);
-    
-   
-    itemList.append(...listItemElemtnts)
-    // itemList.push(listItemElem);
+      
+      const findInput = document.querySelector('.task-input');
+      listItemElem.innerHTML = findInput
+      // listElem.add(listItemElem)
+      // return listItemsElems
+      //   console.log(listItemElem.innerHTML = findInput.value);
+    })
+      listElem.append(listItemElem)
     
   }
   
