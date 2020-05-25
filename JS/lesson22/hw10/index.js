@@ -37,12 +37,13 @@ const tasks = [
   function addSomeInput(){
     const listElem = document.querySelector('.list')
     const listItemElem = document.createElement("li");
+    const findInput = document.querySelector('.task-input');
+    
     const listItemsElems = tasks
     .sort((a, b) => a.done - b.done)
     .map(({done}) =>{
       listItemElem.classList.add("list__item");
       
-      const findInput = document.querySelector('.task-input');
       listItemElem.innerHTML = findInput.value
       
       if (done) {
@@ -57,11 +58,11 @@ const tasks = [
       return listItemElem;
      
     })
-    if(listItemElem.innerHTML == ''){
-      listElem.remove(findInput.value)
-     }else{
+    // if(listItemElem.innerHTML == ''){
+    //   listElem.remove(findInput.value)
+    //  }else
       listElem.append(listItemElem)
-     }
+      findInput.value = '';
   }
   const reomoveEmptyString = () => {
     const listElem = document.querySelector('.list')
