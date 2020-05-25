@@ -46,9 +46,9 @@ const tasks = [
       
       listItemElem.innerHTML = findInput.value
       
-      // if (done){
-      //   // listItemElem.classList.add("list__item_done");
-      // } 
+      if (done){
+        // listItemElem.classList.add("list__item_done");
+      } 
     
       const checkBoxElem = document.createElement("input");
       checkBoxElem.setAttribute("type", "checkbox");
