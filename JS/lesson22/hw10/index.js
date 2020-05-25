@@ -43,6 +43,7 @@ const tasks = [
       
       const findInput = document.querySelector('.task-input');
       listItemElem.innerHTML = findInput.value
+      
      
       if (done) {
         listItemElem.classList.add("list__item_done");
@@ -51,13 +52,13 @@ const tasks = [
       checkBoxElem.setAttribute("type", "checkbox");
       checkBoxElem.checked = done;
       checkBoxElem.classList.add("list__item-checkbox");
-      listItemElem.append(checkBoxElem, text);
+      listItemElem.append(checkBoxElem);
   
       return listItemElem;
      
     })
       listElem.append(listItemElem)
-    
+  
   }
   
   const findBtn = document.querySelector('.create-task-btn');
