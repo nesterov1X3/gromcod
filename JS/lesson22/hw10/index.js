@@ -42,10 +42,19 @@ const tasks = [
       listItemElem.classList.add("list__item");
       
       const findInput = document.querySelector('.task-input');
-      listItemElem.innerHTML = findInput
-      // listElem.add(listItemElem)
-      // return listItemsElems
-      //   console.log(listItemElem.innerHTML = findInput.value);
+      listItemElem.innerHTML = findInput.value
+     
+      if (done) {
+        listItemElem.classList.add("list__item_done");
+      }
+      const checkBoxElem = document.createElement("input");
+      checkBoxElem.setAttribute("type", "checkbox");
+      checkBoxElem.checked = done;
+      checkBoxElem.classList.add("list__item-checkbox");
+      listItemElem.append(checkBoxElem, text);
+  
+      return listItemElem;
+     
     })
       listElem.append(listItemElem)
     
