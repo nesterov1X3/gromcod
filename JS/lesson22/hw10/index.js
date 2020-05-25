@@ -51,7 +51,7 @@ const tasks = [
       }
       const checkBoxElem = document.createElement("input");
       checkBoxElem.setAttribute("type", "checkbox");
-      checkBoxElem.checked = done;
+      // checkBoxElem.checked = done;
       checkBoxElem.classList.add("list__item-checkbox");
       listItemElem.append(checkBoxElem);
       
