@@ -33,16 +33,11 @@ const tasks = [
 
 
 
-//найти кнопку querySelector
-//создать li, указать ей стили
-//добавить ей значение input
-//добавить ее к списку
-//создать событие клик для create
 
-  function addSomeInput(itemList){
+  function addSomeInput(){
     const listElem = document.querySelector('.list')
     const listItemElem = document.createElement("li");
-    const listItemsElems = itemList
+    const listItemsElems = tasks
     .map(({text, done}) =>{
       listItemElem.classList.add("list__item");
       
@@ -57,5 +52,5 @@ const tasks = [
   }
   
   const findBtn = document.querySelector('.create-task-btn');
-  findBtn.addEventListener('click', addSomeInput(tasks))
+  findBtn.addEventListener('click', addSomeInput)
 
