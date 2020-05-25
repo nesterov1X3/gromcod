@@ -46,21 +46,22 @@ const tasks = [
       
       listItemElem.innerHTML = findInput.value
       
-      if (done) {
-        // listItemElem.classList.add("list__item_done");
-      }
+      // if (done){
+      //   // listItemElem.classList.add("list__item_done");
+      // } 
+    
       const checkBoxElem = document.createElement("input");
       checkBoxElem.setAttribute("type", "checkbox");
       // checkBoxElem.checked = done;
       checkBoxElem.classList.add("list__item-checkbox");
       listItemElem.append(checkBoxElem);
-      
+      if(checkBoxElem.checked == true){
+        listItemElem.classList.add("list__item_done");
+      }
       return listItemElem;
      
     })
-    // if(listItemElem.innerHTML == ''){
-    //   listElem.remove(findInput.value)
-    //  }else
+  
       listElem.append(listItemElem)
       findInput.value = '';
   }
