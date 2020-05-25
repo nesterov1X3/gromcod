@@ -38,13 +38,13 @@ const tasks = [
     const listElem = document.querySelector('.list')
     const listItemElem = document.createElement("li");
     const listItemsElems = tasks
-    .map(({text, done}) =>{
+    .sort((a, b) => a.done - b.done)
+    .map(({done}) =>{
       listItemElem.classList.add("list__item");
       
       const findInput = document.querySelector('.task-input');
       listItemElem.innerHTML = findInput.value
       
-     
       if (done) {
         listItemElem.classList.add("list__item_done");
       }
@@ -53,14 +53,36 @@ const tasks = [
       checkBoxElem.checked = done;
       checkBoxElem.classList.add("list__item-checkbox");
       listItemElem.append(checkBoxElem);
-  
+      
       return listItemElem;
      
     })
+    if(listItemElem.innerHTML == ''){
+      listElem.remove(findInput.value)
+     }else{
       listElem.append(listItemElem)
-  
+     }
   }
-  
+  const reomoveEmptyString = () => {
+    const listElem = document.querySelector('.list')
+    const listItemElem = document.createElement("li");
+    const findInput = document.querySelector('.task-input');
+    listItemElem.innerHTML = findInput.value
+    if(findInput.value = ''){
+      listElem.remove(listItemElem.innerHTML)
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
   const findBtn = document.querySelector('.create-task-btn');
   findBtn.addEventListener('click', addSomeInput)
 
