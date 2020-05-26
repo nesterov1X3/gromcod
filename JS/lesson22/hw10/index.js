@@ -61,23 +61,17 @@ const tasks = [
       return listItemElem;
      
     })
-  
+    const taskTitleInputElem = document.querySelector('.task-input');
+    const text = taskTitleInputElem.value;
+    if (!text) {
+        return;
+    }
       listElem.append(listItemElem)
       findInput.value = '';
       // if(findInput.value == ''){
       //   listElem.remove(lastChild)
       // }
   }
-  const reomoveEmptyString = () => {
-    const listElem = document.querySelector('.list')
-    const listItemElem = document.createElement("li");
-    const findInput = document.querySelector('.task-input');
-    listItemElem.innerHTML = findInput.value
-    if(findInput.value == ''){
-      listElem.remove(listItemElem)
-    }
-  }
-
   const findBtn = document.querySelector('.create-task-btn');
-  findBtn.addEventListener('click', addSomeInput, reomoveEmptyString)
+  findBtn.addEventListener('click', addSomeInput)
 
