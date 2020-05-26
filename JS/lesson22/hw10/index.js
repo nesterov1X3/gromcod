@@ -47,7 +47,7 @@ const tasks = [
       listItemElem.innerHTML = findInput.value
       
       if (done){
-        // listItemElem.classList.add("list__item_done");
+        listItemElem.classList.add("list__item_done");
       } 
     
       const checkBoxElem = document.createElement("input");
@@ -61,25 +61,19 @@ const tasks = [
       return listItemElem;
      
     })
+    
     const taskTitleInputElem = document.querySelector('.task-input');
     const text = taskTitleInputElem.value;
     if (!text) {
         return;
     }
       listElem.append(listItemElem)
+      
       findInput.value = '';
-      // if(findInput.value == ''){
-      //   listElem.remove(lastChild)
-      // }
+     
   }
-  const switсhCheckBox = (event) => {
-    const currentListItem = event.target.closest(".list__item");
-    tasks.forEach((task) => {
-      if (task.text == currentListItem.innerText) {
-        task.done = event.target.checked;
-      }
-    });
-  }
+  
+  
   const findBtn = document.querySelector('.create-task-btn');
-  findBtn.addEventListener('click', addSomeInput, switсhCheckBox)
+  findBtn.addEventListener('click', addSomeInput)
 
