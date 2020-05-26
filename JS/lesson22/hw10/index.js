@@ -33,7 +33,7 @@ const tasks = [
 
 
 
-
+//добавление инпута в лист
   function addSomeInput(){
     const listElem = document.querySelector('.list')
     const listItemElem = document.createElement("li");
@@ -46,9 +46,9 @@ const tasks = [
       
       listItemElem.innerHTML = findInput.value
       
-      // if (done){
-      //   // listItemElem.classList.add("list__item_done");
-      // } 
+      if (done){
+        // listItemElem.classList.add("list__item_done");
+      } 
     
       const checkBoxElem = document.createElement("input");
       checkBoxElem.setAttribute("type", "checkbox");
@@ -72,6 +72,14 @@ const tasks = [
       //   listElem.remove(lastChild)
       // }
   }
+  const switсhCheckBox = (event) => {
+    const currentListItem = event.target.closest(".list__item");
+    tasks.forEach((task) => {
+      if (task.text == currentListItem.innerText) {
+        task.done = event.target.checked;
+      }
+    });
+  }
   const findBtn = document.querySelector('.create-task-btn');
-  findBtn.addEventListener('click', addSomeInput)
+  findBtn.addEventListener('click', addSomeInput, switсhCheckBox)
 
