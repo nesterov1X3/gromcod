@@ -55,15 +55,15 @@ const tasks = [
       checkBoxElem.checked = false;
       checkBoxElem.classList.add("list__item-checkbox");
       listItemElem.append(checkBoxElem);
-      const switсhCheckBox = (event) => {
-        const currentListItem = event.target.closest(".list__item");
-        tasks.forEach((item) => {
-          if (task.text == currentListItem.innerText) {
-            item.done = event.target.checked;
-          }
-        });
-      return listItemElem;
-      }
+      // const switсh = (event) => {
+      //   const curItem = event.target.closest(".list__item");
+      //   tasks.forEach((item) => {
+      //     if (task.text == curItem.innerText) {
+      //       item.done = event.target.checked;
+      //     }
+      //   });
+      // return curItem;
+      // }
     })
     
     const taskTitleInputElem = document.querySelector('.task-input');
