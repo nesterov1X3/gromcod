@@ -1,9 +1,10 @@
 const dayWeeks = ['Mo', 'Tu', 'We', 'Th', 'Fr', 'St', 'Su']
+  let lastDay = dayWeeks.pop()
+  dayWeeks.shift(lastDay)
+
 export function dayOfWeek(date, days){
   const day = new Date(date).getDate();
   const dateInFuture = new Date(date).setDate(day + days);
-  let lastDay = dayWeeks.pop()
-  dayWeeks.shift(lastDay)
 
   return  dayWeeks[new Date(dateInFuture).getDay()]
   // return new Date(dateInFuture)
