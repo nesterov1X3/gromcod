@@ -1,69 +1,66 @@
-// // так можно получить данные формы
-// const formFields = [...new FormData(formElem)];
-// // formFields => [["email", "значение поля email"], ["password", "значение поля password"]]
-// const formData = formFields.reduce(function(acc, formField) {
-//     const prop = formField[0]; // здесь "name" инпута
-//     const value = formField[0]; // здесь "value" инпута
-//     // если использовать деструктуризацию, то можно предыдущие 2 строки записать короче
-//     // const [prop, value] = formField;
-//     return {
-//         // используем оператор расширения, чтобы в acc добвить свойства все предыдущих итераций
-//         ...acc,
-//         // используем вычислимое свойство объекта, чтобы добавить в аккумулятор новое свойство
-//         [prop]: value,
-//     };
-// }, {});
+const generateNumberRange = (from, to) =>{
+  const result = [];
 
-const emailInputElem = document.querySelector('#email');
-const passwordInputElem = document.querySelector('#password');
+  for(let i = from; i <= to; i++){
+    result.push(i);
+  }
 
+  return result;
+}
 
-const emailErrorElem = document.querySelector('.error-text_email');
-const passwordErrorElem = document.querySelector('.error-text_password');
+const getLineSeats = () => generateNumberRange(1, 10)
+  .map(seatNumber => `
+        <div
+           class="sector__seat"
+           data-sector-number ="${seatNumber}"
+       ></div>
+        `).join('');
 
-const isRequired = value => value
-  ? undefined
-  : 'Required';
+        
 
-const isEmail = value => value.includes('@')
-  ? undefined
-  : 'Should be an email';
+const getSectorLines = () => {
+  const seatsString = getLineSeats()
 
-const validatorsByField = {
-  email: [isRequired, isEmail],
-  password: [isRequired]
+  return generateNumberRange(1, 10)
+  .map(lineNumber => `
+        <div
+           class="sector__line"
+           data-sector-number ="${lineNumber}"
+       >${seatsString}</div>
+        `).join('');
 };
 
-const validate = (fieldName, value) => {
-  const validators = validatorsByField[fieldName]
-  return validators
-    .map(validator => validator(value))
-    .filter(errorText => errorText)
-    .join(', ');
+const arenaElem = document.querySelector('.arena');
+
+const sectorsString =() => {
+    const linesString = getSectorLines();
+
+    const sectorsString = generateNumberRange(1, 3)
+       .map(sectorNumber => `
+        <div
+           class="sector"
+           data-sector-number ="${sectorNumber}"
+       >${linesString()}</div>
+        `).join('');
+
+        arenaElem.innerHTML = sectorsString;
 };
 
-const onEmailChange = event => {
-  const errorText = validate('email', event.target.value)
-  emailErrorElem.textContent = errorText;
-}
+const OnSeatSelect = event => {
+  const isSeat = event.target.classList.contains('sector__seat')
 
-const onPasswordChange = event => {
-  const errorText = validate('password', event.target.value)
-  passwordErrorElem.textContent = errorText;
-}
+  if(!isSeat){
+    return
+  }
+  const seatNumber = event.target.dataset.seatNumber;
+  const lineNumber = event.target.closest('.sector__line').dataset.lineNumber;
+  const lineNumber = event.target.closest('.sector').dataset.sectorNumber;
 
-emailInputElem.addEventListener('input', onEmailChange)
-passwordInputElem.addEventListener('input', onPasswordChange)
+ const selectedSeatElem = document.querySelector('.board__selected-seat')
+ selectedSeatElem.textContent = `S ${sectorNumber} - L ${lineNumber} - S ${seatNumber}`
+};
 
 
-const formElem = document.querySelector('.login-form');
+arenaElem.addEventListener('click', OnSeatSelect)
 
-const onFormSubmit = event => {
-  event.preventDefault();
-  const formData = [...new FormData(formElem)]
-     .reduce((acc, [field, value]) => ({...acc, [field] : value}), {})
-
-     alert(JSON.stringify(formData))
-}
-
-formElem.addEventListener('submit', onFormSubmit)
+renderArena()
