@@ -11,5 +11,5 @@ export function dayOfWeek(date, days){
   // return new Date(dateInFuture)
 }
 
-// const result = dayOfWeek(new Date(2321, 2, 21), 401)
-// console.log(result);
+const result = dayOfWeek(new Date(2321, 2, 21), 401)
+console.log(result);
