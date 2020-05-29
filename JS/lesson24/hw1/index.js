@@ -30,7 +30,7 @@ const secondsRes = Math.floor((diffMode %  minutes)  / seconds)
 
 
 }
-const result = getDiff(new Date(1943, 21, 15, 5, 29), new Date(1942, 21, 17, 37, 1))
+// const result = getDiff(new Date(1943, 21, 15, 5, 29), new Date(1942, 21, 17, 37, 1))
 // console.log(result);
 
 
