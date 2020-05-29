@@ -4,7 +4,7 @@
 //subtract one argument from another (module)
 //make true format
 export function getDiff(startDate, endDate){
-const diffTime = startDate - endDate;
+const diffTime = endDate - startDate;
 const diffMode = Math.abs(diffTime)
 
 const seconds = 1000;
@@ -26,7 +26,6 @@ const secondsRes = Math.floor((diffMode %  minutes)  / seconds)
 
   return `${dayRes}d, ${hourRes}h, ${minutesRes}m, ${secondsRes}s`
 
-  
 
 
 }
