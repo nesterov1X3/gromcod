@@ -9,8 +9,8 @@ const hours = minutes * 60;
 const days = hours * 24;
 
 export function getDiff(startDate, endDate){
-const diffTime = endDate - startDate;
-const diffMode = Math.abs(diffTime)
+// const diffTime = endDate - startDate;
+const diffMode = Math.abs(endDate - startDate)
 
 // const seconds = 1000;
 // const minutes = seconds * 60;
