@@ -3,14 +3,19 @@
 //output: 1 obj;
 //subtract one argument from another (module)
 //make true format
-export function getDiff(startDate, endDate){
-const diffTime = endDate - startDate;
-const diffMode = Math.abs(diffTime)
-
 const seconds = 1000;
 const minutes = seconds * 60;
 const hours = minutes * 60;
 const days = hours * 24;
+
+export function getDiff(startDate, endDate){
+const diffTime = endDate - startDate;
+const diffMode = Math.abs(diffTime)
+
+// const seconds = 1000;
+// const minutes = seconds * 60;
+// const hours = minutes * 60;
+// const days = hours * 24;
 
 const dayRes = Math.floor((diffMode /  days))
 // console.log(dayRes);
