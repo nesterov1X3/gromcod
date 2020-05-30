@@ -24,17 +24,17 @@ const hourRes = Math.floor((diffMode %  days)  / hours)
 // console.log(hourRes)
 
 const minutesRes = Math.floor((diffMode %  hours)  / minutes)
-// console.log(minutesRes);
+console.log(minutesRes);
 
 const secondsRes = Math.floor((diffMode %  minutes)  / seconds)
-// console.log(secondsRes);
+console.log(secondsRes);
 
-  return `${dayRes}d, ${hourRes}h, ${minutesRes}m, ${secondsRes}s`
+  return `${dayRes}d ${hourRes}h ${minutesRes}m ${secondsRes}s`
 
 
 
 }
-// const result = getDiff(new Date(1943, 21, 15, 5, 29), new Date(1942, 21, 17, 37, 1))
+// const result = getDiff(new Date(1943, 21, 1, 5, 19), new Date(1944, 21, 17, 3, 17))
 // console.log(result);
 
 
