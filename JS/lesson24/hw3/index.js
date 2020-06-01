@@ -23,7 +23,6 @@ const renderTasks = tasksList => {
     const tasksElems = tasksList
         .slice()
         .sort(compareTasks)
-
         .map(({ text, done, id }) => {
             const listItemElem = document.createElement('li');
             listItemElem.classList.add('list__item');
