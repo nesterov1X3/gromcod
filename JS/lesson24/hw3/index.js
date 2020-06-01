@@ -12,7 +12,6 @@ const renderTasks = tasksList => {
     const tasksElems = tasksList
         .slice()
         .sort((a, b) => a.done - b.done)
-        // .sort((a, b) => new Date(a.createDate) - new Date(b.createDate))
         .map(({ text, done, id }) => {
             const listItemElem = document.createElement('li');
             listItemElem.classList.add('list__item');
@@ -43,7 +42,9 @@ const onToggleTask = e => {
     renderTasks(tasks);
 };
 
+ 
 
+ 
 const todoListElem = document.querySelector('.list');
 todoListElem.addEventListener('click', onToggleTask);
 const createBtnElem = document.querySelector('.create-task-btn');
@@ -61,6 +62,19 @@ const onCreateTask = () => {
         id: Math.random().toString()
     });
     renderTasks(tasks);
+
+
+    const sortTasksByTime = taskListIt => {
+        taskListIt.sort((a, b) => {
+    
+        return (
+            new Date(a.createDate).getTime()-
+            new Date(b.createDate).getTime()
+                )
+         
+         })
+     }
+     sortTasksByTime(tasks)
 };
 createBtnElem.addEventListener('click', onCreateTask);
 
