@@ -7,11 +7,23 @@ const tasks = [
     { text: 'Visit doctor', done: true, createDate: '2019-11-27T15:51:32.222Z', id: '4' },
     { text: 'Buy meat', done: true, createDate: '2019-11-28T15:51:32.222Z', id: '5' },
 ];
+
+const compareTasks = (a, b) => {
+    if (a.done - b.done !== 0) {
+        return a.done - b.done;
+    };
+    if (a.done) {
+        return new Date(b.finishDate) - new Date(a.finishDate);
+    }
+    return new Date(b.createDate) - new Date(a.createDate);
+};
+
 const renderTasks = tasksList => {
     listElem.innerHTML = '';
     const tasksElems = tasksList
         .slice()
-        .sort((a, b) => a.done - b.done)
+        .sort(compareTasks)
+
         .map(({ text, done, id }) => {
             const listItemElem = document.createElement('li');
             listItemElem.classList.add('list__item');
@@ -21,11 +33,22 @@ const renderTasks = tasksList => {
             // checkbox.setAttribute('data-create', createDate);
             checkbox.checked = done;
             checkbox.classList.add('list__item-checkbox');
+            
             if (done) {
                 listItemElem.classList.add('list__item_done');
             }
             listItemElem.append(checkbox, text);
+            const compareTasks = (a, b) => {
+                if (a.done - b.done !== 0) {
+                    return a.done - b.done;
+                };
+                if (a.done) {
+                    return new Date(b.finishDate) - new Date(a.finishDate);
+                }
+                return new Date(b.createDate) - new Date(a.createDate);
+            };
             return listItemElem;
+            
         });
     listElem.append(...tasksElems);
 };
@@ -42,7 +65,7 @@ const onToggleTask = e => {
     renderTasks(tasks);
 };
 
- 
+
 
  
 const todoListElem = document.querySelector('.list');
@@ -63,18 +86,8 @@ const onCreateTask = () => {
     });
     renderTasks(tasks);
 
-
-    const sortTasksByTime = taskListIt => {
-        taskListIt.sort((a, b) => {
     
-        return (
-            new Date(a.createDate).getTime()-
-            new Date(b.createDate).getTime()
-                )
-         
-         })
-     }
-     sortTasksByTime(tasks)
+    
 };
 createBtnElem.addEventListener('click', onCreateTask);
 
