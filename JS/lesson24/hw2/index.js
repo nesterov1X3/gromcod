@@ -18,28 +18,37 @@ const students = [{ name: 'Tom', birthDate: '01/15/2010' },
 
 export function studentsBirthDays(students) {
      let monStud = ['Jan', 'Feb', 'Mar']
-    const studentsObj = students.reduce((acc, student) => {
-     //     console.log(student);
-         const monthNumber = new Date(student.birthDate).getMonth()
-         const montName = monStud[monthNumber];
-         const oldStudents = acc[montName] ? acc[montName] : []
-         return {...acc, [montName] : oldStudents.concat(student)}
-     //     console.log(montName);
-     
-    }, {});
-    for (let month in studentsObj) {
-     const sortedStudents = studentsObj[month].sort((a, b) => {
-         return (
-             new Date(a.birthDate).getDate() -
-             new Date(b.birthDate).getDate()
-         );
-     });
-     const studentsNames = sortedStudents.map((student) => student.name);
-     studentsObj[month] = studentsNames;
- }
+     const studentsObj = students.reduce((acc, student) => {
+          //     console.log(student);
+          const monthNumber = new Date(student.birthDate).getMonth()
+          // console.log(monthNumber);
+          
+          const montName = monStud[monthNumber];
+          // console.log(monStud[monthNumber]);
+          
+          const oldStudents = acc[montName] ? acc[montName] : []
+          console.log({ ...acc, [montName]: oldStudents.concat(student) });
+          // console.log({...acc});
+          
+          return { ...acc, [montName]: oldStudents.concat(student) }
+          
+          
+          //console.log(montName);
 
+     }, {});
+     for (let month in studentsObj) {
+          const sortedStudents = studentsObj[month].sort((a, b) => {
+               return (
+                    new Date(a.birthDate).getDate() -
+                    new Date(b.birthDate).getDate()
+               );
+          });
+          const studentsNames = sortedStudents.map((student) => student.name);
+          studentsObj[month] = studentsNames;
+     }
 
-    return studentsObj
-     ;}
-// const result =  studentsBirthDays(students)
+     return studentsObj;
+          
+}
+const result = studentsBirthDays(students)
 // console.log(result);
