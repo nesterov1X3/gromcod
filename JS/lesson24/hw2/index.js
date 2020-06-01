@@ -40,20 +40,6 @@ export function studentsBirthDays(students) {
 
 
     return studentsObj
-
-
-
-
-
-
-     // const studSpl = copStud.map(item => 
-     //      item.birthDate.split('/'))
-     // console.log(studSpl);
-     
-     // const studentByMounth = Object.assign({}, { 'Jan': students.
-     // filter(item => item)
-     // }, { 'Mar': students })
-     // console.log(studentByMounth)
      ;}
-const result =  studentsBirthDays(students)
-console.log(result);
+// const result =  studentsBirthDays(students)
+// console.log(result);
