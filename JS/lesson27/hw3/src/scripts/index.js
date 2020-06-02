@@ -1,6 +1,5 @@
-import {renderTasks} from './renderer.js'
-import {initTodoListHandlers} from './todoList.js'
-
+import { initTodoListHandlers } from "./todoList.js";
+import { renderTasks } from "./renderer.js";
 
 document.addEventListener("DOMContentLoaded", () => {
   renderTasks();
@@ -12,9 +11,6 @@ const onStorageChange = (e) => {
 };
 
 window.addEventListener("storage", onStorageChange);
-
-
-
  
 
 

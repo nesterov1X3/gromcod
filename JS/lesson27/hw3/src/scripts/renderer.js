@@ -1,7 +1,7 @@
 
-import {getItem} from './storage.js'
-
+import { getItem } from "./storage.js";
 const listElem = document.querySelector(".list");
+
 const compareTasks = (a, b) => {
   if (a.done - b.done !== 0) {
     return a.done - b.done;
