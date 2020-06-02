@@ -6,7 +6,7 @@ localStorage.setItem('character', 'Bad')
 
 // console.log(JSON.parse(localStorage.getItem('numbers')))
 
-const getLocalStorageData = () => {
+export const getLocalStorageData = () => {
  return Object.entries(localStorage)
         .reduce((acc, [key, value])=>{
           let newValue;
