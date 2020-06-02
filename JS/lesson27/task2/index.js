@@ -7,7 +7,7 @@ const counterValueElem = document.querySelector('.counter__value')
 const onChangeCalck = event => {
   const isButton = event.target.classList.contains('.counter__button');
   
-  if (isButton) {
+  if (!isButton) {
     return;
   }
 
