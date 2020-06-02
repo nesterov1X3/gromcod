@@ -1,45 +1,8 @@
+import {renderTasks} from './checkbox.js'
+import {tasks} from './storage.js'
 
 
 const listElem = document.querySelector(".list");
-
-const tasks = [
-  {
-    text: "Buy milk",
-    done: false,
-    createDate: new Date().toISOString(),
-    doneDate: null,
-    id: "1",
-  },
-  {
-    text: "Pick up Tom from airport",
-    done: false,
-    createDate: new Date().toISOString(),
-    doneDate: null,
-    id: "2",
-  },
-  {
-    text: "Visit party",
-    done: false,
-    createDate: new Date().toISOString(),
-    doneDate: null,
-    id: "3",
-  },
-  {
-    text: "Visit doctor",
-    done: true,
-    createDate: new Date().toISOString(),
-    doneDate: new Date().toISOString(),
-    id: "4",
-  },
-  {
-    text: "Buy meat",
-    done: true,
-    createDate: new Date().toISOString(),
-    doneDate: new Date().toISOString(),
-    id: "5",
-  },
-];
-
 const compareTasks = (a, b) => {
   if (a.done - b.done !== 0) {
     return a.done - b.done;
@@ -50,29 +13,7 @@ const compareTasks = (a, b) => {
   return new Date(b.createDate) - new Date(a.createDate);
 };
 
-const renderTasks = (tasksList) => {
-  listElem.innerHTML = "";
-  const tasksElems = tasksList
-    .slice()
-    .sort(compareTasks)
-    .map(({ text, done, id }) => {
-      const listItemElem = document.createElement("li");
-      listItemElem.classList.add("list__item");
-      const checkbox = document.createElement("input");
-      checkbox.setAttribute("type", "checkbox");
-      checkbox.setAttribute("data-id", id);
-      checkbox.checked = done;
-      checkbox.classList.add("list__item-checkbox");
-      if (done) {
-        listItemElem.classList.add("list__item_done");
-      }
-      listItemElem.append(checkbox, text);
-      return listItemElem;
-    });
-  listElem.append(...tasksElems);
-};
 
-renderTasks(tasks);
 
 const onToggleTask = (e) => {
   const isCheckbox = e.target.classList.contains("list__item-checkbox");
