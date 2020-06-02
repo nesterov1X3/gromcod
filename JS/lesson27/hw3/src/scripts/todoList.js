@@ -1,5 +1,5 @@
 import { onToggleTask } from './updateTask.js'
-import { onCreateTask } from './createTasks.js'
+import { onCreateTask } from './createTask.js'
 
 
 export const initTodoListHandlers = () => {
