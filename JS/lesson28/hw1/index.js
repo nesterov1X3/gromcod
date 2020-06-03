@@ -25,7 +25,7 @@ export const shmoment = initDate => {
         result = new Date(result.setHours(
           result.getHours() + value))
        };
-        if(date == 'minute'){
+        if(date == 'minutes'){
         result = new Date(result.setMinutes(
           result.getMinutes() + value))
        };
@@ -57,7 +57,7 @@ export const shmoment = initDate => {
         result = new Date(result.setHours(
           result.getHours() - value))
        };
-        if(date == 'minute'){
+        if(date == 'minutes'){
         result = new Date(result.setMinutes(
           result.getMinutes() - value))
        };
