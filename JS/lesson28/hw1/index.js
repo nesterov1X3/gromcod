@@ -8,8 +8,9 @@
 export const shmoment = initDate => {
   let result = initDate;
   const calc = {
-    yaer(value){
+    yaers(value){
       result += value;
+      return this
     },
     add(date){
       
