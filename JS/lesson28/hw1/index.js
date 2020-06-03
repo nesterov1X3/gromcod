@@ -1,4 +1,4 @@
-//input: number
+//input: date
 //output: obj
 //сигнатура const shmoment = initDate =>{}
 //create obj 
@@ -8,12 +8,11 @@
 export const shmoment = initDate => {
   let result = initDate;
   const calc = {
-    add(date, value){
-      result +=date.getMounth(value);
-      result +=date.getDay(value);
-      result +=date.getYear(value);
-      result +=date.getHours(value);
-      result +=date.getMinutes(value);
+    yaer(value){
+      result += value;
+    },
+    add(date){
+      
       return this;
     },
     subtract(date, value){
