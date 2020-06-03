@@ -9,11 +9,15 @@ export const shmoment = initDate => {
   let result = initDate;
   const calc = {
     add(date, value){
-      result +=value;
+      result +=date.getMounth(value);
+      result +=date.getDay(value);
+      result +=date.getYear(value);
+      result +=date.getHours(value);
+      result +=date.getMinutes(value);
       return this;
     },
     subtract(date, value){
-      result -= value;
+      result -= valdateue;
       return this
     },
     result(){
