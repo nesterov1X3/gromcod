@@ -1,8 +1,8 @@
-import {calc} from './index.js'
+import {compose, doEverything} from './index.js'
 
-it('should be make operations with element', () => {
-  const  result = (calc(3).add(2).mult(4).div(10).subtract(5).result());
+it('should be done multiplate operations', () => {
+  const  result = doEverything(4)
 
 
-  expect(result).toEqual(-3)
+  expect(result).toEqual(18)
 })

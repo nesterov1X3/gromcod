@@ -7,7 +7,7 @@ export  const compose = (...funcs) => value => {
   return funcs.reduce((acc, func) => func(acc), value);
 }
  
-const doEverything = compose(
+export const doEverything = compose(
     add2,
     square,
     half,
