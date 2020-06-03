@@ -12,52 +12,64 @@ export const shmoment = initDate => {
        if(date == 'years'){
         result = new Date(result.setFullYear
           (result.getFullYear() + value)) 
-       }else if(date == 'months'){
+       };
+        if(date == 'months'){
           result = new Date(result.setMonth(
             result.getMonth() + value))
-       }else if(date == 'days'){
-        result = new Date(result.setDay(
-          result.getDay() + value))
-       }else if(date == 'hours'){
+       };
+        if(date == 'days'){
+        result = new Date(result.setDate(
+          result.getDate() + value))
+       };
+        if(date == 'hours'){
         result = new Date(result.setHours(
           result.getHours() + value))
-       }else if(date == 'minute'){
+       };
+        if(date == 'minute'){
         result = new Date(result.setMinutes(
           result.getMinutes() + value))
-       }else if(date == 'seconds'){
+       };
+        if(date == 'seconds'){
         result = new Date(result.setSeconds(
           result.getSeconds() + value))
-       }else if(date == 'milliseconds'){
+       };
+        if(date == 'milliseconds'){
         result = new Date(result.setMilliseconds(
           result.getMilliseconds() + value))
        }
-      return result;
+      return this;
 
     },
     subtract(date, value){
       if(date == 'years'){
         result = new Date(result.setFullYear
           (result.getFullYear() - value)) 
-       }else if(date == 'months'){
+       };
+        if(date == 'months'){
           result = new Date(result.setMonth(
             result.getMonth() - value))
-       }else if(date == 'days'){
-        result = new Date(result.setDay(
-          result.getDay() - value))
-       }else if(date == 'hours'){
+       };
+       if(date == 'days'){
+        result = new Date(result.setDate(
+          result.getDate() - value))
+       };
+       if(date == 'hours'){
         result = new Date(result.setHours(
           result.getHours() - value))
-       }else if(date == 'minute'){
+       };
+        if(date == 'minute'){
         result = new Date(result.setMinutes(
           result.getMinutes() - value))
-       }else if(date == 'seconds'){
+       };
+       if(date == 'seconds'){
         result = new Date(result.setSeconds(
           result.getSeconds() - value))
-       }else if(date == 'milliseconds'){
+       };
+       if(date == 'milliseconds'){
         result = new Date(result.setMilliseconds(
           result.getMilliseconds() - value))
        }
-      return result
+      return this;
     },
     result(){
       return result
@@ -66,5 +78,5 @@ export const shmoment = initDate => {
   };
   return calc;
 }
-const result = shmoment(new Date(2020, 0, 6, 43, 41, 55).add('minutes', 2).add('days', 43).result())
+const result = shmoment(new Date(2020, 0, 7, 17, 17, 17)).add('minutes', 2).add('days', 8).subtract('years', 1).result();
 // console.log(result);
