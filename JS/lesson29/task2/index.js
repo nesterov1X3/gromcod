@@ -1,6 +1,6 @@
-//pigner
+//pinger
 
-const pigner = (num, period) => {
+export const pinger = (num, period) => {
   let i = num;
   console.log('Ping');
   const interval = setInterval(() => {
