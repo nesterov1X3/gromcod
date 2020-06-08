@@ -12,5 +12,5 @@ const failedPromise = new Promise((resolve, reject) => {
 */
 
 failedPromise.catch(function onError(error) {
- console.log(error);
+ console.log(new Error (error));
 });
