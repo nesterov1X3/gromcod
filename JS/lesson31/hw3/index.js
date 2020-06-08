@@ -1,7 +1,7 @@
 export const delay = time => {
   const pr = new Promise((resolve) => {
     setTimeout(() => {
-      console.log('Done')
+      resolve(time)
   }, time)
 })
 return pr
