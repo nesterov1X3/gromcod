@@ -10,7 +10,7 @@ export const requestUserData = userId => {
         name: 'John',
         age: 17,
         userId,
-        email: `${userId}@exapmle.com`
+        email: `${userId}@exapmle.com`,
       });
     }, 1000);
   }
@@ -18,6 +18,10 @@ export const requestUserData = userId => {
     return request;
 };
 requestUserData('userid777')
-.catch(error => console.log(error))
+.catch(error => {
+  console.log(error)
+  throw new Error('Error');
+})
 .then(data => console.log(data))
+.catch(err => console.log(err))
 .finally(() => console.log('finally'));
