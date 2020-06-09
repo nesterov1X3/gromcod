@@ -10,15 +10,16 @@ const asyncNum2 = getValueWithDaley(undefined, 2000)
 const asyncNum3 = getValueWithDaley('6', 3000)
 
 
-const getSum = numbers =>
- numbers
- .filter(value => !isNaN(value))
- .reduce((acc, num) => acc + Number(num), 0)
+// const getSum = numbers =>
+//  numbers
+//  .filter(value => !isNaN(value))
+//  .reduce((acc, num) => acc + Number(num), 0)
 
 export const asyncSum = (...asyncNumbers) => {
-  return Promise.all(asyncNumbers)
-    .then(numbers => getSum(numbers))
-    .catch(() => Promise.reject(new Error('Can\'t calculate')))
+  return Promise.allSettled(asyncNumbers)
+    // .then(numbers => getSum(numbers))
+    .then(numbers => console.log(numbers))
+    // .catch(() => Promise.reject(new Error('Can\'t calculate')))
 }
 
 asyncSum(asyncNum1, Promise.reject(new Error('err')), asyncNum3)
