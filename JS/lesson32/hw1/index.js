@@ -3,10 +3,7 @@
  */
 
 /* ...code here */
-const makePromise = number =>  new Promise(resolve => {
-   resolve(number)
-})
-
+const makePromise = number => Promise.resolve(number)
 /*
  * пример использования
  */
