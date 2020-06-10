@@ -13,7 +13,7 @@ const promiseNumber3 = Promise.resolve(8);
 export const resultPromise = allPromis(
     promiseNumber1,
     promiseNumber2,
-    promiseNumber3
+    promiseNumber3,
   );
 
 
