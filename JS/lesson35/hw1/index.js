@@ -26,6 +26,6 @@ try {
 return JSON.parse(str)
 }
 const res = parseUser('{"name":"Tom"}')
-// console.log(res);
+console.log(res);
 
 
