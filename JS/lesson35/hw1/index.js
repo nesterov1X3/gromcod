@@ -23,7 +23,7 @@ try {
 } catch(err) {
   return null
 } 
-return str
+return JSON.parse(str)
 }
 const res = parseUser('{"name":"Tom"}')
 // console.log(res);
