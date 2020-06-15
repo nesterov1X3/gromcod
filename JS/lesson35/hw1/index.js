@@ -19,10 +19,11 @@
 export const parseUser = (str) => {
 try {
    JSON.parse(str);
-    return str
+    
 } catch(err) {
   return null
 } 
+return str
 }
 const res = parseUser('{"name":"Tom"}')
 // console.log(res);
