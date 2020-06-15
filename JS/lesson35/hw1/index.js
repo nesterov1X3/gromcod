@@ -2,18 +2,29 @@
 //проверку на парсин json
 //true return result
 //false return null
-const str = JSON.stringify('hello everybody')
 
+
+//   let result = null;
+//   if(JSON.parse(str)) {
+//       result = str
+//       return result
+    
+//   }else {
+//     return result
+//   } 
+// }
+// const res = parseUser(str)
+// console.log(res);
 
 export const parseUser = (str) => {
-  let result = null;
-  if(JSON.parse(str)) {
-      result = str
-      return result
-    
-  }else {
-    return result
-  } 
+try {
+   JSON.parse(str);
+    return str
+} catch(err) {
+  return null
+} 
 }
-const res = parseUser(str)
+const res = parseUser('{"name":"Tom"}')
 // console.log(res);
+
+
