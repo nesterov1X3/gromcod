@@ -22,7 +22,7 @@
 //     }
 
 // } 
-const getUsersBlogs = async usersList => {
+export const getUsersBlogs = async usersList => {
     try {
         const requests = usersList
             .map(userId => fetch(`https://api.github.com/users/${userId}`).then(response => response.json()));
